@@ -1,0 +1,1064 @@
+2025-03-30 23:03:23,571 - INFO - Starting Flask application
+2025-03-30 23:03:23,588 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-03-30 23:03:23,589 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-30 23:03:23,598 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:03:27,213 - INFO - Starting Flask application
+2025-03-30 23:03:27,222 - WARNING -  * Debugger is active!
+2025-03-30 23:03:27,234 - INFO -  * Debugger PIN: 129-054-596
+2025-03-30 23:03:29,342 - INFO - 127.0.0.1 - - [30/Mar/2025 23:03:29] "GET / HTTP/1.1" 200 -
+2025-03-30 23:03:29,370 - INFO - 127.0.0.1 - - [30/Mar/2025 23:03:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-30 23:03:47,276 - INFO - 127.0.0.1 - - [30/Mar/2025 23:03:47] "GET / HTTP/1.1" 200 -
+2025-03-30 23:03:47,319 - INFO - 127.0.0.1 - - [30/Mar/2025 23:03:47] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-30 23:03:47,708 - INFO - 127.0.0.1 - - [30/Mar/2025 23:03:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-30 23:03:52,745 - DEBUG - [SCRAPE-1743356032745339200] Starting scrape request
+2025-03-30 23:03:52,747 - DEBUG - [SCRAPE-1743356032745339200] Scraping content...
+2025-03-30 23:03:52,747 - DEBUG - [SCRAPE-1743356032745339200] Starting scrape with Crawl4aiTools
+2025-03-30 23:03:52,747 - DEBUG - Using proactor: IocpProactor
+2025-03-30 23:03:58,682 - DEBUG - [SCRAPE-1743356032745339200] Scrape completed successfully
+2025-03-30 23:03:58,684 - INFO - 127.0.0.1 - - [30/Mar/2025 23:03:58] "POST /scrape HTTP/1.1" 200 -
+2025-03-30 23:04:44,988 - DEBUG - [ANALYZE-1743356084988115200] Starting analysis request
+2025-03-30 23:04:44,991 - DEBUG - [ANALYZE-1743356084988115200] Analyzing content...
+2025-03-30 23:04:44,992 - DEBUG - [ANALYZE-1743356084988115200] Starting Gemini analysis
+2025-03-30 23:04:47,599 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-30 23:04:47,600 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-30 23:04:47,879 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-30 23:04:48,105 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FF523BA630>
+2025-03-30 23:04:48,105 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001FF51A80ED0> server_hostname='api.phidata.com' timeout=60
+2025-03-30 23:04:48,509 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FF523BA9C0>
+2025-03-30 23:04:48,510 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-30 23:04:48,510 - DEBUG - send_request_headers.complete
+2025-03-30 23:04:48,510 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-30 23:04:48,511 - DEBUG - send_request_body.complete
+2025-03-30 23:04:48,511 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-30 23:04:48,715 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 30 Mar 2025 17:34:52 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-30 23:04:48,716 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-30 23:04:48,716 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-30 23:04:48,716 - DEBUG - receive_response_body.complete
+2025-03-30 23:04:48,716 - DEBUG - response_closed.started
+2025-03-30 23:04:48,717 - DEBUG - response_closed.complete
+2025-03-30 23:04:48,717 - DEBUG - close.started
+2025-03-30 23:04:48,717 - DEBUG - close.complete
+2025-03-30 23:04:48,717 - DEBUG - [ANALYZE-1743356084988115200] Analysis completed
+2025-03-30 23:04:48,718 - ERROR - [ANALYZE-1743356084988115200] Analysis failed: Object of type RunResponse is not JSON serializable
+2025-03-30 23:04:48,718 - INFO - 127.0.0.1 - - [30/Mar/2025 23:04:48] "[35m[1mPOST /analyze HTTP/1.1[0m" 500 -
+2025-03-30 23:06:11,823 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:06:11,834 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:06:11,835 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:06:12,613 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:06:12,614 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:06:12,614 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:06:13,223 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:06:17,184 - INFO - Starting Flask application
+2025-03-30 23:06:17,194 - WARNING -  * Debugger is active!
+2025-03-30 23:06:17,210 - INFO -  * Debugger PIN: 129-054-596
+2025-03-30 23:06:18,123 - DEBUG - [SCRAPE-1743356178123916800] Starting scrape request
+2025-03-30 23:06:18,125 - DEBUG - [SCRAPE-1743356178123916800] Scraping content...
+2025-03-30 23:06:18,125 - DEBUG - [SCRAPE-1743356178123916800] Starting scrape with Crawl4aiTools
+2025-03-30 23:06:18,127 - DEBUG - Using proactor: IocpProactor
+2025-03-30 23:06:23,721 - DEBUG - [SCRAPE-1743356178123916800] Scrape completed successfully
+2025-03-30 23:06:23,722 - INFO - 127.0.0.1 - - [30/Mar/2025 23:06:23] "POST /scrape HTTP/1.1" 200 -
+2025-03-30 23:06:26,997 - DEBUG - [ANALYZE-1743356186997542800] Starting analysis request
+2025-03-30 23:06:27,002 - DEBUG - [ANALYZE-1743356186997542800] Analyzing content...
+2025-03-30 23:06:27,003 - ERROR - [ANALYZE-1743356186997542800] Analysis failed: name 'Groq' is not defined
+2025-03-30 23:06:27,004 - DEBUG - [ANALYZE-1743356186997542800] Full traceback:
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\New folder\LLM-Scraper\app.py", line 137, in analyze_content
+    client = Groq(api_key=API_KEY)
+             ^^^^
+NameError: name 'Groq' is not defined
+
+2025-03-30 23:06:27,005 - INFO - 127.0.0.1 - - [30/Mar/2025 23:06:27] "[35m[1mPOST /analyze HTTP/1.1[0m" 500 -
+2025-03-30 23:08:36,694 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:08:38,019 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:08:42,009 - INFO - Starting Flask application
+2025-03-30 23:08:42,018 - WARNING -  * Debugger is active!
+2025-03-30 23:08:42,032 - INFO -  * Debugger PIN: 129-054-596
+2025-03-30 23:12:06,612 - INFO -  * Detected change in 'C:\\Python312\\Lib\\logging\\__init__.py', reloading
+2025-03-30 23:12:07,534 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:12:11,841 - INFO - Starting Flask application
+2025-03-30 23:12:11,851 - WARNING -  * Debugger is active!
+2025-03-30 23:12:11,863 - INFO -  * Debugger PIN: 129-054-596
+2025-03-30 23:12:56,457 - INFO - Starting Flask application
+2025-03-30 23:12:56,480 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-03-30 23:12:56,481 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-30 23:12:56,492 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:13:00,715 - INFO - Starting Flask application
+2025-03-30 23:13:00,724 - WARNING -  * Debugger is active!
+2025-03-30 23:13:00,739 - INFO -  * Debugger PIN: 129-054-596
+2025-03-30 23:13:22,848 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:13:22,849 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:13:22,849 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:13:23,503 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:13:32,635 - INFO - Starting Flask application
+2025-03-30 23:13:32,657 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-03-30 23:13:32,658 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-30 23:13:32,668 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:13:36,437 - INFO - Starting Flask application
+2025-03-30 23:13:36,449 - WARNING -  * Debugger is active!
+2025-03-30 23:13:36,463 - INFO -  * Debugger PIN: 129-054-596
+2025-03-30 23:13:36,494 - INFO - 127.0.0.1 - - [30/Mar/2025 23:13:36] "GET / HTTP/1.1" 200 -
+2025-03-30 23:13:36,532 - INFO - 127.0.0.1 - - [30/Mar/2025 23:13:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-30 23:13:48,504 - INFO - 127.0.0.1 - - [30/Mar/2025 23:13:48] "GET / HTTP/1.1" 200 -
+2025-03-30 23:13:48,544 - INFO - 127.0.0.1 - - [30/Mar/2025 23:13:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-30 23:14:03,689 - DEBUG - [SCRAPE-1743356643689560900] Starting scrape request
+2025-03-30 23:14:03,691 - DEBUG - [SCRAPE-1743356643689560900] Scraping content...
+2025-03-30 23:14:03,691 - DEBUG - [SCRAPE-1743356643689560900] Starting scrape with Crawl4aiTools
+2025-03-30 23:14:03,691 - DEBUG - Using proactor: IocpProactor
+2025-03-30 23:14:10,102 - DEBUG - [SCRAPE-1743356643689560900] Scrape completed successfully
+2025-03-30 23:14:10,102 - INFO - 127.0.0.1 - - [30/Mar/2025 23:14:10] "POST /scrape HTTP/1.1" 200 -
+2025-03-30 23:14:47,246 - DEBUG - [ANALYZE-1743356687246030500] Starting analysis request
+2025-03-30 23:14:47,249 - DEBUG - [ANALYZE-1743356687246030500] Analyzing content with Gemini...
+2025-03-30 23:14:47,249 - DEBUG - [ANALYZE-1743356687246030500] Starting Gemini analysis
+2025-03-30 23:14:50,935 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-30 23:14:50,935 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-30 23:14:51,209 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-30 23:14:51,459 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001A08A1BBAA0>
+2025-03-30 23:14:51,459 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001A08A712A50> server_hostname='api.phidata.com' timeout=60
+2025-03-30 23:14:51,922 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001A08A1BBA40>
+2025-03-30 23:14:51,923 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-30 23:14:51,923 - DEBUG - send_request_headers.complete
+2025-03-30 23:14:51,924 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-30 23:14:51,924 - DEBUG - send_request_body.complete
+2025-03-30 23:14:51,924 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-30 23:14:52,158 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 30 Mar 2025 17:44:55 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-30 23:14:52,160 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-30 23:14:52,161 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-30 23:14:52,161 - DEBUG - receive_response_body.complete
+2025-03-30 23:14:52,161 - DEBUG - response_closed.started
+2025-03-30 23:14:52,162 - DEBUG - response_closed.complete
+2025-03-30 23:14:52,162 - DEBUG - close.started
+2025-03-30 23:14:52,162 - DEBUG - close.complete
+2025-03-30 23:14:52,165 - DEBUG - [ANALYZE-1743356687246030500] Analysis completed
+2025-03-30 23:14:52,165 - INFO - 127.0.0.1 - - [30/Mar/2025 23:14:52] "POST /analyze HTTP/1.1" 200 -
+2025-03-30 23:15:39,779 - DEBUG - [ANALYZE-1743356739779726500] Starting analysis request
+2025-03-30 23:15:39,785 - DEBUG - [ANALYZE-1743356739779726500] Analyzing content with Gemini...
+2025-03-30 23:15:39,786 - DEBUG - [ANALYZE-1743356739779726500] Starting Gemini analysis
+2025-03-30 23:15:42,684 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-30 23:15:42,685 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-30 23:15:42,926 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-30 23:15:43,136 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001A08AD64AA0>
+2025-03-30 23:15:43,136 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001A08A193DD0> server_hostname='api.phidata.com' timeout=60
+2025-03-30 23:15:43,549 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001A08A1BBE90>
+2025-03-30 23:15:43,549 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-30 23:15:43,550 - DEBUG - send_request_headers.complete
+2025-03-30 23:15:43,550 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-30 23:15:43,550 - DEBUG - send_request_body.complete
+2025-03-30 23:15:43,550 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-30 23:15:43,760 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 30 Mar 2025 17:45:47 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-30 23:15:43,760 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-30 23:15:43,761 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-30 23:15:43,761 - DEBUG - receive_response_body.complete
+2025-03-30 23:15:43,761 - DEBUG - response_closed.started
+2025-03-30 23:15:43,761 - DEBUG - response_closed.complete
+2025-03-30 23:15:43,761 - DEBUG - close.started
+2025-03-30 23:15:43,761 - DEBUG - close.complete
+2025-03-30 23:15:43,762 - DEBUG - [ANALYZE-1743356739779726500] Analysis completed
+2025-03-30 23:15:43,764 - INFO - 127.0.0.1 - - [30/Mar/2025 23:15:43] "POST /analyze HTTP/1.1" 200 -
+2025-03-30 23:17:20,391 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\_pytest\\junitxml.py', reloading
+2025-03-30 23:17:21,856 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:17:25,610 - INFO - Starting Flask application
+2025-03-30 23:17:25,620 - WARNING -  * Debugger is active!
+2025-03-30 23:17:25,632 - INFO -  * Debugger PIN: 129-054-596
+2025-03-30 23:17:38,133 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:17:38,133 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:17:38,134 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:17:39,266 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:17:49,447 - INFO - Starting Flask application
+2025-03-30 23:17:49,471 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-03-30 23:17:49,472 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-30 23:17:49,487 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:17:53,629 - INFO - Starting Flask application
+2025-03-30 23:17:53,641 - WARNING -  * Debugger is active!
+2025-03-30 23:17:53,658 - INFO -  * Debugger PIN: 129-054-596
+2025-03-30 23:17:56,896 - INFO - 127.0.0.1 - - [30/Mar/2025 23:17:56] "GET / HTTP/1.1" 200 -
+2025-03-30 23:17:56,928 - INFO - 127.0.0.1 - - [30/Mar/2025 23:17:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-30 23:18:09,669 - DEBUG - [SCRAPE-1743356889669966800] Starting scrape request
+2025-03-30 23:18:09,672 - DEBUG - [SCRAPE-1743356889669966800] Scraping content...
+2025-03-30 23:18:09,672 - DEBUG - [SCRAPE-1743356889669966800] Starting scrape with Crawl4aiTools
+2025-03-30 23:18:09,673 - DEBUG - Using proactor: IocpProactor
+2025-03-30 23:18:15,942 - DEBUG - [SCRAPE-1743356889669966800] Scrape completed successfully
+2025-03-30 23:18:15,943 - INFO - 127.0.0.1 - - [30/Mar/2025 23:18:15] "POST /scrape HTTP/1.1" 200 -
+2025-03-30 23:19:05,433 - DEBUG - [ANALYZE-1743356945433217200] Starting analysis request
+2025-03-30 23:19:05,436 - DEBUG - [ANALYZE-1743356945433217200] Analyzing content with Gemini...
+2025-03-30 23:19:05,436 - DEBUG - [ANALYZE-1743356945433217200] Starting Gemini analysis
+2025-03-30 23:19:10,111 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-30 23:19:10,112 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-30 23:19:10,369 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-30 23:19:10,612 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001E8DC03AC60>
+2025-03-30 23:19:10,612 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001E8DB701150> server_hostname='api.phidata.com' timeout=60
+2025-03-30 23:19:11,062 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001E8DC03ADE0>
+2025-03-30 23:19:11,063 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-30 23:19:11,064 - DEBUG - send_request_headers.complete
+2025-03-30 23:19:11,064 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-30 23:19:11,065 - DEBUG - send_request_body.complete
+2025-03-30 23:19:11,065 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-30 23:19:11,292 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 30 Mar 2025 17:49:14 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-30 23:19:11,293 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-30 23:19:11,294 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-30 23:19:11,295 - DEBUG - receive_response_body.complete
+2025-03-30 23:19:11,295 - DEBUG - response_closed.started
+2025-03-30 23:19:11,295 - DEBUG - response_closed.complete
+2025-03-30 23:19:11,295 - DEBUG - close.started
+2025-03-30 23:19:11,297 - DEBUG - close.complete
+2025-03-30 23:19:11,298 - DEBUG - [ANALYZE-1743356945433217200] Analysis completed
+2025-03-30 23:19:11,298 - INFO - 127.0.0.1 - - [30/Mar/2025 23:19:11] "POST /analyze HTTP/1.1" 200 -
+2025-03-30 23:25:14,506 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:25:14,507 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:25:14,507 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:25:16,032 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:25:19,957 - INFO - Starting Flask application
+2025-03-30 23:25:19,967 - WARNING -  * Debugger is active!
+2025-03-30 23:25:19,982 - INFO -  * Debugger PIN: 129-054-596
+2025-03-30 23:26:48,218 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:26:48,219 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:26:48,219 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:26:49,266 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:26:53,195 - INFO - Starting Flask application
+2025-03-30 23:26:53,206 - WARNING -  * Debugger is active!
+2025-03-30 23:26:53,221 - INFO -  * Debugger PIN: 129-054-596
+2025-03-30 23:26:56,791 - INFO - 127.0.0.1 - - [30/Mar/2025 23:26:56] "GET / HTTP/1.1" 200 -
+2025-03-30 23:26:56,827 - INFO - 127.0.0.1 - - [30/Mar/2025 23:26:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-30 23:27:00,321 - DEBUG - [SCRAPE-1743357420321768500] Starting scrape request
+2025-03-30 23:27:00,324 - DEBUG - [SCRAPE-1743357420321768500] Scraping content...
+2025-03-30 23:27:00,324 - DEBUG - [SCRAPE-1743357420321768500] Starting scrape with Crawl4aiTools
+2025-03-30 23:27:00,324 - DEBUG - Using proactor: IocpProactor
+2025-03-30 23:27:06,552 - DEBUG - [SCRAPE-1743357420321768500] Scrape completed successfully
+2025-03-30 23:27:06,553 - INFO - 127.0.0.1 - - [30/Mar/2025 23:27:06] "POST /scrape HTTP/1.1" 200 -
+2025-03-30 23:27:30,534 - DEBUG - [ANALYZE-1743357450534311600] Starting analysis request
+2025-03-30 23:27:30,537 - DEBUG - [ANALYZE-1743357450534311600] Analyzing content with Gemini...
+2025-03-30 23:27:30,537 - DEBUG - [ANALYZE-1743357450534311600] Starting Gemini analysis
+2025-03-30 23:27:33,287 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-30 23:27:33,287 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-30 23:27:33,529 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-30 23:27:33,781 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FCC1C3AC30>
+2025-03-30 23:27:33,782 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001FCC13422D0> server_hostname='api.phidata.com' timeout=60
+2025-03-30 23:27:34,201 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FCC1C3B980>
+2025-03-30 23:27:34,202 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-30 23:27:34,202 - DEBUG - send_request_headers.complete
+2025-03-30 23:27:34,203 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-30 23:27:34,203 - DEBUG - send_request_body.complete
+2025-03-30 23:27:34,203 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-30 23:27:34,410 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 30 Mar 2025 17:57:37 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-30 23:27:34,410 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-30 23:27:34,411 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-30 23:27:34,411 - DEBUG - receive_response_body.complete
+2025-03-30 23:27:34,411 - DEBUG - response_closed.started
+2025-03-30 23:27:34,412 - DEBUG - response_closed.complete
+2025-03-30 23:27:34,412 - DEBUG - close.started
+2025-03-30 23:27:34,412 - DEBUG - close.complete
+2025-03-30 23:27:34,413 - INFO - 127.0.0.1 - - [30/Mar/2025 23:27:34] "POST /analyze HTTP/1.1" 200 -
+2025-03-30 23:32:15,924 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:32:15,925 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:32:15,925 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:32:16,454 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:32:20,667 - INFO - Starting Flask application
+2025-03-30 23:32:20,677 - WARNING -  * Debugger is active!
+2025-03-30 23:32:20,692 - INFO -  * Debugger PIN: 129-054-596
+2025-03-30 23:32:27,175 - INFO - 127.0.0.1 - - [30/Mar/2025 23:32:27] "GET / HTTP/1.1" 200 -
+2025-03-30 23:32:27,204 - INFO - 127.0.0.1 - - [30/Mar/2025 23:32:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-30 23:32:30,772 - DEBUG - [SCRAPE-1743357750772953500] Starting scrape request
+2025-03-30 23:32:30,775 - DEBUG - [SCRAPE-1743357750772953500] Scraping content...
+2025-03-30 23:32:30,775 - DEBUG - [SCRAPE-1743357750772953500] Starting scrape with Crawl4aiTools
+2025-03-30 23:32:30,775 - DEBUG - Using proactor: IocpProactor
+2025-03-30 23:32:36,216 - DEBUG - [SCRAPE-1743357750772953500] Scrape completed successfully
+2025-03-30 23:32:36,218 - INFO - 127.0.0.1 - - [30/Mar/2025 23:32:36] "POST /scrape HTTP/1.1" 200 -
+2025-03-30 23:33:06,764 - DEBUG - [ANALYZE-1743357786764099900] Starting analysis request
+2025-03-30 23:33:06,769 - DEBUG - [ANALYZE-1743357786764099900] Getting clean Gemini response...
+2025-03-30 23:33:06,769 - DEBUG - [ANALYZE-1743357786764099900] Starting Gemini analysis
+2025-03-30 23:33:09,088 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-30 23:33:09,089 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-30 23:33:09,366 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-30 23:33:09,616 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001A9EDF97F80>
+2025-03-30 23:33:09,616 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001A9ED5AEE50> server_hostname='api.phidata.com' timeout=60
+2025-03-30 23:33:10,020 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001A9EDF7D730>
+2025-03-30 23:33:10,020 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-30 23:33:10,021 - DEBUG - send_request_headers.complete
+2025-03-30 23:33:10,021 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-30 23:33:10,022 - DEBUG - send_request_body.complete
+2025-03-30 23:33:10,022 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-30 23:33:10,228 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 30 Mar 2025 18:03:13 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-30 23:33:10,229 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-30 23:33:10,230 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-30 23:33:10,230 - DEBUG - receive_response_body.complete
+2025-03-30 23:33:10,230 - DEBUG - response_closed.started
+2025-03-30 23:33:10,231 - DEBUG - response_closed.complete
+2025-03-30 23:33:10,231 - DEBUG - close.started
+2025-03-30 23:33:10,231 - DEBUG - close.complete
+2025-03-30 23:33:10,232 - INFO - 127.0.0.1 - - [30/Mar/2025 23:33:10] "POST /analyze HTTP/1.1" 200 -
+2025-03-30 23:35:51,738 - INFO -  * Detected change in 'C:\\Python312\\Lib\\re\\__init__.py', reloading
+2025-03-30 23:35:52,402 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:35:52,403 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:35:52,403 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:35:52,404 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-30 23:35:53,157 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:38:04,074 - INFO - Starting Flask application
+2025-03-30 23:38:04,092 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-03-30 23:38:04,092 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-30 23:38:04,102 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:38:07,932 - INFO - Starting Flask application
+2025-03-30 23:38:07,941 - WARNING -  * Debugger is active!
+2025-03-30 23:38:07,956 - INFO -  * Debugger PIN: 129-054-596
+2025-03-30 23:38:12,340 - INFO - 127.0.0.1 - - [30/Mar/2025 23:38:12] "GET / HTTP/1.1" 200 -
+2025-03-30 23:38:12,379 - INFO - 127.0.0.1 - - [30/Mar/2025 23:38:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-30 23:38:15,635 - DEBUG - [SCRAPE-1743358095635349000] Starting scrape request
+2025-03-30 23:38:15,636 - DEBUG - [SCRAPE-1743358095635349000] Scraping content...
+2025-03-30 23:38:15,636 - DEBUG - [SCRAPE-1743358095635349000] Starting scrape with Crawl4aiTools
+2025-03-30 23:38:15,637 - DEBUG - Using proactor: IocpProactor
+2025-03-30 23:38:21,785 - DEBUG - [SCRAPE-1743358095635349000] Scrape completed successfully
+2025-03-30 23:38:21,786 - INFO - 127.0.0.1 - - [30/Mar/2025 23:38:21] "POST /scrape HTTP/1.1" 200 -
+2025-03-30 23:38:47,959 - DEBUG - [ANALYZE-1743358127959111100] Starting analysis request
+2025-03-30 23:38:47,961 - DEBUG - [ANALYZE-1743358127959111100] Getting structured Gemini response...
+2025-03-30 23:38:47,961 - DEBUG - [ANALYZE-1743358127959111100] Starting structured Gemini analysis
+2025-03-30 23:38:49,122 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-30 23:38:49,124 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-30 23:38:49,394 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-30 23:38:49,622 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000027099E178C0>
+2025-03-30 23:38:49,623 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000027099530ED0> server_hostname='api.phidata.com' timeout=60
+2025-03-30 23:38:50,047 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000027099E05700>
+2025-03-30 23:38:50,047 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-30 23:38:50,048 - DEBUG - send_request_headers.complete
+2025-03-30 23:38:50,049 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-30 23:38:50,049 - DEBUG - send_request_body.complete
+2025-03-30 23:38:50,049 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-30 23:38:50,263 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 30 Mar 2025 18:08:53 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-30 23:38:50,264 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-30 23:38:50,264 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-30 23:38:50,264 - DEBUG - receive_response_body.complete
+2025-03-30 23:38:50,265 - DEBUG - response_closed.started
+2025-03-30 23:38:50,265 - DEBUG - response_closed.complete
+2025-03-30 23:38:50,265 - DEBUG - close.started
+2025-03-30 23:38:50,266 - DEBUG - close.complete
+2025-03-30 23:38:50,266 - INFO - 127.0.0.1 - - [30/Mar/2025 23:38:50] "POST /analyze HTTP/1.1" 200 -
+2025-03-30 23:39:27,044 - INFO - Starting Flask application
+2025-03-30 23:39:27,068 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-03-30 23:39:27,070 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-30 23:39:27,080 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:39:31,678 - INFO - Starting Flask application
+2025-03-30 23:39:31,690 - WARNING -  * Debugger is active!
+2025-03-30 23:39:31,708 - INFO -  * Debugger PIN: 129-054-596
+2025-03-30 23:39:52,878 - INFO - Starting Flask application
+2025-03-30 23:39:52,896 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-03-30 23:39:52,896 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-30 23:39:52,906 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:39:56,756 - INFO - Starting Flask application
+2025-03-30 23:39:56,766 - WARNING -  * Debugger is active!
+2025-03-30 23:39:56,779 - INFO -  * Debugger PIN: 129-054-596
+2025-03-30 23:53:02,548 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pyparsing\\core.py', reloading
+2025-03-30 23:53:03,769 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:53:07,688 - INFO - Starting Flask application
+2025-03-30 23:53:07,701 - WARNING -  * Debugger is active!
+2025-03-30 23:53:07,716 - INFO -  * Debugger PIN: 129-054-596
+2025-03-30 23:53:16,972 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\playwright\\_impl\\_connection.py', reloading
+2025-03-30 23:53:16,973 - INFO -  * Detected change in 'C:\\Python312\\Lib\\asyncio\\events.py', reloading
+2025-03-30 23:53:16,974 - INFO -  * Detected change in 'C:\\Python312\\Lib\\asyncio\\base_events.py', reloading
+2025-03-30 23:53:16,975 - INFO -  * Detected change in 'C:\\Python312\\Lib\\asyncio\\windows_events.py', reloading
+2025-03-30 23:53:16,975 - INFO -  * Detected change in 'C:\\Python312\\Lib\\asyncio\\runners.py', reloading
+2025-03-30 23:53:16,976 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\tools\\crawl4ai_tools.py', reloading
+2025-03-30 23:53:16,986 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\playwright\\_impl\\_browser_type.py', reloading
+2025-03-30 23:53:16,988 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\playwright\\async_api\\_generated.py', reloading
+2025-03-30 23:53:16,989 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\crawl4ai\\browser_manager.py', reloading
+2025-03-30 23:53:16,990 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\crawl4ai\\async_crawler_strategy.py', reloading
+2025-03-30 23:53:16,992 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\crawl4ai\\async_webcrawler.py', reloading
+2025-03-30 23:53:18,407 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-30 23:53:22,357 - INFO - Starting Flask application
+2025-03-30 23:53:22,368 - WARNING -  * Debugger is active!
+2025-03-30 23:53:22,380 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 16:58:04,275 - INFO - Starting Flask application
+2025-03-31 16:58:04,298 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-03-31 16:58:04,299 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 16:58:04,315 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 16:58:07,972 - INFO - Starting Flask application
+2025-03-31 16:58:07,981 - WARNING -  * Debugger is active!
+2025-03-31 16:58:07,996 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 16:58:13,616 - INFO - 127.0.0.1 - - [31/Mar/2025 16:58:13] "GET / HTTP/1.1" 200 -
+2025-03-31 16:58:13,650 - INFO - 127.0.0.1 - - [31/Mar/2025 16:58:13] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-31 16:58:14,014 - INFO - 127.0.0.1 - - [31/Mar/2025 16:58:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-31 16:58:27,698 - DEBUG - [SCRAPE-1743420507697592800] Starting scrape request
+2025-03-31 16:58:27,701 - DEBUG - [SCRAPE-1743420507697592800] Scraping content...
+2025-03-31 16:58:27,701 - DEBUG - [SCRAPE-1743420507697592800] Starting scrape with Crawl4aiTools
+2025-03-31 16:58:27,702 - DEBUG - Using proactor: IocpProactor
+2025-03-31 16:58:28,848 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+2025-03-31 16:58:28,849 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+2025-03-31 16:58:28,851 - INFO -  * Detected change in 'C:\\Python312\\Lib\\http\\server.py', reloading
+2025-03-31 16:58:28,853 - INFO -  * Detected change in 'C:\\Python312\\Lib\\socketserver.py', reloading
+2025-03-31 16:58:28,855 - INFO -  * Detected change in 'C:\\Python312\\Lib\\threading.py', reloading
+2025-03-31 16:58:29,681 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 16:58:33,559 - INFO - Starting Flask application
+2025-03-31 16:58:33,569 - WARNING -  * Debugger is active!
+2025-03-31 16:58:33,583 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 16:58:33,610 - DEBUG - [SCRAPE-1743420513609946000] Starting scrape request
+2025-03-31 16:58:33,611 - DEBUG - [SCRAPE-1743420513609946000] Scraping content...
+2025-03-31 16:58:33,611 - DEBUG - [SCRAPE-1743420513609946000] Starting scrape with Crawl4aiTools
+2025-03-31 16:58:33,612 - DEBUG - Using proactor: IocpProactor
+2025-03-31 16:58:39,376 - DEBUG - [SCRAPE-1743420513609946000] Scrape completed successfully
+2025-03-31 16:58:39,377 - INFO - 127.0.0.1 - - [31/Mar/2025 16:58:39] "POST /scrape HTTP/1.1" 200 -
+2025-03-31 16:59:29,827 - DEBUG - [ANALYZE-1743420569826698100] Starting analysis request
+2025-03-31 16:59:29,829 - DEBUG - [ANALYZE-1743420569826698100] Getting structured Gemini response...
+2025-03-31 16:59:29,829 - DEBUG - [ANALYZE-1743420569826698100] Starting structured Gemini analysis
+2025-03-31 16:59:30,999 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-31 16:59:31,000 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-31 16:59:31,233 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-31 16:59:31,460 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002963E34CEC0>
+2025-03-31 16:59:31,460 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002963D8FC350> server_hostname='api.phidata.com' timeout=60
+2025-03-31 16:59:31,869 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002963E34D250>
+2025-03-31 16:59:31,870 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-31 16:59:31,871 - DEBUG - send_request_headers.complete
+2025-03-31 16:59:31,871 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-31 16:59:31,872 - DEBUG - send_request_body.complete
+2025-03-31 16:59:31,872 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-31 16:59:32,081 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 31 Mar 2025 11:29:31 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-31 16:59:32,081 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-31 16:59:32,082 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-31 16:59:32,082 - DEBUG - receive_response_body.complete
+2025-03-31 16:59:32,082 - DEBUG - response_closed.started
+2025-03-31 16:59:32,082 - DEBUG - response_closed.complete
+2025-03-31 16:59:32,083 - DEBUG - close.started
+2025-03-31 16:59:32,085 - DEBUG - close.complete
+2025-03-31 16:59:32,085 - INFO - 127.0.0.1 - - [31/Mar/2025 16:59:32] "POST /analyze HTTP/1.1" 200 -
+2025-03-31 17:00:15,656 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\datastructures\\structures.py', reloading
+2025-03-31 17:00:16,871 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:00:20,763 - INFO - Starting Flask application
+2025-03-31 17:00:20,774 - WARNING -  * Debugger is active!
+2025-03-31 17:00:20,786 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 17:00:41,661 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\_pytest\\logging.py', reloading
+2025-03-31 17:00:41,678 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\_pytest\\monkeypatch.py', reloading
+2025-03-31 17:00:41,688 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\_pytest\\recwarn.py', reloading
+2025-03-31 17:00:41,703 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\_pytest\\tmpdir.py', reloading
+2025-03-31 17:00:42,396 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:00:46,250 - INFO - Starting Flask application
+2025-03-31 17:00:46,260 - WARNING -  * Debugger is active!
+2025-03-31 17:00:46,274 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 17:01:39,903 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:01:39,905 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:01:39,906 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:01:41,152 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:01:44,958 - INFO - Starting Flask application
+2025-03-31 17:01:44,969 - WARNING -  * Debugger is active!
+2025-03-31 17:01:44,982 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 17:01:51,702 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:01:51,702 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:01:51,702 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:01:52,500 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:02:52,248 - INFO - Starting Flask application
+2025-03-31 17:02:52,270 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-03-31 17:02:52,270 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 17:02:52,281 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:02:56,027 - INFO - Starting Flask application
+2025-03-31 17:02:56,037 - WARNING -  * Debugger is active!
+2025-03-31 17:02:56,052 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 17:02:56,807 - INFO - 127.0.0.1 - - [31/Mar/2025 17:02:56] "GET / HTTP/1.1" 200 -
+2025-03-31 17:02:56,836 - INFO - 127.0.0.1 - - [31/Mar/2025 17:02:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 17:03:01,639 - DEBUG - [SCRAPE-1743420781639536500] Starting scrape request
+2025-03-31 17:03:01,640 - DEBUG - [SCRAPE-1743420781639536500] Scraping content...
+2025-03-31 17:03:01,640 - DEBUG - [SCRAPE-1743420781639536500] Starting scrape with Crawl4aiTools
+2025-03-31 17:03:01,641 - DEBUG - Using proactor: IocpProactor
+2025-03-31 17:03:07,840 - DEBUG - [SCRAPE-1743420781639536500] Scrape completed successfully
+2025-03-31 17:03:07,840 - INFO - 127.0.0.1 - - [31/Mar/2025 17:03:07] "POST /scrape HTTP/1.1" 200 -
+2025-03-31 17:03:42,484 - DEBUG - [ANALYZE-1743420822484242000] Starting analysis request
+2025-03-31 17:03:42,487 - DEBUG - [ANALYZE-1743420822484242000] Getting structured Gemini response...
+2025-03-31 17:03:44,357 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-31 17:03:44,358 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-31 17:03:44,601 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-31 17:03:44,877 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000023BA8D038C0>
+2025-03-31 17:03:44,878 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000023BA87C4ED0> server_hostname='api.phidata.com' timeout=60
+2025-03-31 17:03:45,335 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000023BA816A150>
+2025-03-31 17:03:45,335 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-31 17:03:45,336 - DEBUG - send_request_headers.complete
+2025-03-31 17:03:45,336 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-31 17:03:45,337 - DEBUG - send_request_body.complete
+2025-03-31 17:03:45,337 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-31 17:03:45,567 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 31 Mar 2025 11:33:45 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-31 17:03:45,567 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-31 17:03:45,568 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-31 17:03:45,568 - DEBUG - receive_response_body.complete
+2025-03-31 17:03:45,568 - DEBUG - response_closed.started
+2025-03-31 17:03:45,568 - DEBUG - response_closed.complete
+2025-03-31 17:03:45,570 - DEBUG - close.started
+2025-03-31 17:03:45,570 - DEBUG - close.complete
+2025-03-31 17:03:45,571 - INFO - 127.0.0.1 - - [31/Mar/2025 17:03:45] "POST /analyze HTTP/1.1" 200 -
+2025-03-31 17:06:28,690 - INFO - Starting Flask application
+2025-03-31 17:06:28,709 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-03-31 17:06:28,710 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 17:06:28,721 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:06:32,484 - INFO - Starting Flask application
+2025-03-31 17:06:32,494 - WARNING -  * Debugger is active!
+2025-03-31 17:06:32,509 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 17:06:35,809 - INFO - 127.0.0.1 - - [31/Mar/2025 17:06:35] "GET / HTTP/1.1" 200 -
+2025-03-31 17:06:35,858 - INFO - 127.0.0.1 - - [31/Mar/2025 17:06:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 17:06:44,294 - DEBUG - [SCRAPE-1743421004294382100] Starting scrape request
+2025-03-31 17:06:44,295 - DEBUG - [SCRAPE-1743421004294382100] Scraping content...
+2025-03-31 17:06:44,296 - DEBUG - [SCRAPE-1743421004294382100] Starting scrape with Crawl4aiTools
+2025-03-31 17:06:44,296 - DEBUG - Using proactor: IocpProactor
+2025-03-31 17:06:49,732 - DEBUG - [SCRAPE-1743421004294382100] Scrape completed successfully
+2025-03-31 17:06:49,733 - INFO - 127.0.0.1 - - [31/Mar/2025 17:06:49] "POST /scrape HTTP/1.1" 200 -
+2025-03-31 17:07:50,137 - DEBUG - [ANALYZE-1743421070137535800] Starting analysis request
+2025-03-31 17:07:50,138 - DEBUG - [ANALYZE-1743421070137535800] Getting structured Gemini response...
+2025-03-31 17:07:52,009 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-31 17:07:52,010 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-31 17:07:52,248 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-31 17:07:52,490 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020812B63A10>
+2025-03-31 17:07:52,490 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020812551450> server_hostname='api.phidata.com' timeout=60
+2025-03-31 17:07:52,919 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020812906F30>
+2025-03-31 17:07:52,920 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-31 17:07:52,922 - DEBUG - send_request_headers.complete
+2025-03-31 17:07:52,922 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-31 17:07:52,922 - DEBUG - send_request_body.complete
+2025-03-31 17:07:52,923 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-31 17:07:53,137 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 31 Mar 2025 11:37:52 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-31 17:07:53,138 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-31 17:07:53,138 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-31 17:07:53,139 - DEBUG - receive_response_body.complete
+2025-03-31 17:07:53,139 - DEBUG - response_closed.started
+2025-03-31 17:07:53,139 - DEBUG - response_closed.complete
+2025-03-31 17:07:53,139 - DEBUG - close.started
+2025-03-31 17:07:53,140 - DEBUG - close.complete
+2025-03-31 17:07:53,141 - INFO - 127.0.0.1 - - [31/Mar/2025 17:07:53] "POST /analyze HTTP/1.1" 200 -
+2025-03-31 17:08:26,920 - DEBUG - [ANALYZE-1743421106920764700] Starting analysis request
+2025-03-31 17:08:26,921 - DEBUG - [ANALYZE-1743421106920764700] Getting structured Gemini response...
+2025-03-31 17:08:27,871 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-31 17:08:27,872 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-31 17:08:28,106 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-31 17:08:28,320 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020812B62FC0>
+2025-03-31 17:08:28,321 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020812A920D0> server_hostname='api.phidata.com' timeout=60
+2025-03-31 17:08:28,747 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020812B63290>
+2025-03-31 17:08:28,747 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-31 17:08:28,747 - DEBUG - send_request_headers.complete
+2025-03-31 17:08:28,748 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-31 17:08:28,748 - DEBUG - send_request_body.complete
+2025-03-31 17:08:28,748 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-31 17:08:28,962 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 31 Mar 2025 11:38:28 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-31 17:08:28,963 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-31 17:08:28,963 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-31 17:08:28,963 - DEBUG - receive_response_body.complete
+2025-03-31 17:08:28,963 - DEBUG - response_closed.started
+2025-03-31 17:08:28,963 - DEBUG - response_closed.complete
+2025-03-31 17:08:28,964 - DEBUG - close.started
+2025-03-31 17:08:28,965 - DEBUG - close.complete
+2025-03-31 17:08:28,965 - INFO - 127.0.0.1 - - [31/Mar/2025 17:08:28] "POST /analyze HTTP/1.1" 200 -
+2025-03-31 17:09:04,460 - DEBUG - [ANALYZE-1743421144460286300] Starting analysis request
+2025-03-31 17:09:04,462 - DEBUG - [ANALYZE-1743421144460286300] Getting structured Gemini response...
+2025-03-31 17:09:10,289 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-31 17:09:10,290 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-31 17:09:10,526 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-31 17:09:10,774 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020812B61F10>
+2025-03-31 17:09:10,775 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020812551450> server_hostname='api.phidata.com' timeout=60
+2025-03-31 17:09:11,238 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020812B60F50>
+2025-03-31 17:09:11,239 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-31 17:09:11,239 - DEBUG - send_request_headers.complete
+2025-03-31 17:09:11,240 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-31 17:09:11,240 - DEBUG - send_request_body.complete
+2025-03-31 17:09:11,240 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-31 17:09:11,473 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 31 Mar 2025 11:39:11 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-31 17:09:11,474 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-31 17:09:11,474 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-31 17:09:11,474 - DEBUG - receive_response_body.complete
+2025-03-31 17:09:11,474 - DEBUG - response_closed.started
+2025-03-31 17:09:11,474 - DEBUG - response_closed.complete
+2025-03-31 17:09:11,476 - DEBUG - close.started
+2025-03-31 17:09:11,476 - DEBUG - close.complete
+2025-03-31 17:09:11,476 - INFO - 127.0.0.1 - - [31/Mar/2025 17:09:11] "POST /analyze HTTP/1.1" 200 -
+2025-03-31 17:10:15,568 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:10:15,568 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:10:15,569 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:10:16,723 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:10:20,835 - INFO - Starting Flask application
+2025-03-31 17:10:20,845 - WARNING -  * Debugger is active!
+2025-03-31 17:10:20,859 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 17:10:21,327 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:10:21,328 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:10:21,328 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:10:22,355 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:11:00,814 - INFO - Starting Flask application
+2025-03-31 17:11:00,833 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-03-31 17:11:00,833 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 17:11:00,843 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:11:04,614 - INFO - Starting Flask application
+2025-03-31 17:11:04,624 - WARNING -  * Debugger is active!
+2025-03-31 17:11:04,639 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 17:11:04,744 - INFO - 127.0.0.1 - - [31/Mar/2025 17:11:04] "GET / HTTP/1.1" 200 -
+2025-03-31 17:11:04,776 - INFO - 127.0.0.1 - - [31/Mar/2025 17:11:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 17:11:09,525 - DEBUG - [SCRAPE-1743421269525744400] Starting scrape request
+2025-03-31 17:11:09,526 - DEBUG - [SCRAPE-1743421269525744400] Scraping content...
+2025-03-31 17:11:09,527 - DEBUG - [SCRAPE-1743421269525744400] Starting scrape with Crawl4aiTools
+2025-03-31 17:11:09,527 - DEBUG - Using proactor: IocpProactor
+2025-03-31 17:11:15,076 - DEBUG - [SCRAPE-1743421269525744400] Scrape completed successfully
+2025-03-31 17:11:15,077 - INFO - 127.0.0.1 - - [31/Mar/2025 17:11:15] "POST /scrape HTTP/1.1" 200 -
+2025-03-31 17:11:45,503 - DEBUG - [ANALYZE-1743421305503483600] Starting analysis request
+2025-03-31 17:11:45,505 - DEBUG - [ANALYZE-1743421305503483600] Getting structured Gemini response...
+2025-03-31 17:11:49,902 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-31 17:11:49,903 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-31 17:11:50,148 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-31 17:11:50,385 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000212B50E8A10>
+2025-03-31 17:11:50,385 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000212B46A7250> server_hostname='api.phidata.com' timeout=60
+2025-03-31 17:11:50,832 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000212B50EA8D0>
+2025-03-31 17:11:50,833 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-31 17:11:50,835 - DEBUG - send_request_headers.complete
+2025-03-31 17:11:50,835 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-31 17:11:50,835 - DEBUG - send_request_body.complete
+2025-03-31 17:11:50,835 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-31 17:11:51,060 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 31 Mar 2025 11:41:50 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-31 17:11:51,061 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-31 17:11:51,061 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-31 17:11:51,062 - DEBUG - receive_response_body.complete
+2025-03-31 17:11:51,062 - DEBUG - response_closed.started
+2025-03-31 17:11:51,062 - DEBUG - response_closed.complete
+2025-03-31 17:11:51,062 - DEBUG - close.started
+2025-03-31 17:11:51,063 - DEBUG - close.complete
+2025-03-31 17:11:51,064 - INFO - 127.0.0.1 - - [31/Mar/2025 17:11:51] "POST /analyze HTTP/1.1" 200 -
+2025-03-31 17:12:22,493 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:12:24,025 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:12:28,282 - INFO - Starting Flask application
+2025-03-31 17:12:28,295 - WARNING -  * Debugger is active!
+2025-03-31 17:12:28,310 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 17:13:04,741 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:13:06,531 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:13:11,029 - INFO - Starting Flask application
+2025-03-31 17:13:11,040 - WARNING -  * Debugger is active!
+2025-03-31 17:13:11,056 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 17:13:25,614 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:13:27,117 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:13:30,982 - INFO - Starting Flask application
+2025-03-31 17:13:30,994 - WARNING -  * Debugger is active!
+2025-03-31 17:13:31,010 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 17:19:44,692 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:19:44,702 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:19:44,703 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:19:45,373 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:19:49,227 - INFO - Starting Flask application
+2025-03-31 17:19:49,237 - WARNING -  * Debugger is active!
+2025-03-31 17:19:49,250 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 17:20:24,568 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:20:24,579 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:20:24,579 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:20:25,997 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:20:53,944 - INFO - Starting Flask application
+2025-03-31 17:20:53,966 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-03-31 17:20:53,967 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 17:20:53,977 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:20:57,646 - INFO - Starting Flask application
+2025-03-31 17:20:57,656 - WARNING -  * Debugger is active!
+2025-03-31 17:20:57,670 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 17:20:57,703 - INFO - 127.0.0.1 - - [31/Mar/2025 17:20:57] "GET / HTTP/1.1" 200 -
+2025-03-31 17:20:57,731 - INFO - 127.0.0.1 - - [31/Mar/2025 17:20:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 17:21:01,463 - DEBUG - [SCRAPE-1743421861463488000] Starting scrape request
+2025-03-31 17:21:01,464 - DEBUG - [SCRAPE-1743421861463488000] Scraping content...
+2025-03-31 17:21:01,465 - DEBUG - [SCRAPE-1743421861463488000] Starting scrape with Crawl4aiTools
+2025-03-31 17:21:01,466 - DEBUG - Using proactor: IocpProactor
+2025-03-31 17:21:07,587 - DEBUG - [SCRAPE-1743421861463488000] Scrape completed successfully
+2025-03-31 17:21:07,588 - INFO - 127.0.0.1 - - [31/Mar/2025 17:21:07] "POST /scrape HTTP/1.1" 200 -
+2025-03-31 17:21:12,901 - DEBUG - [ANALYZE-1743421872901313700] Starting analysis request
+2025-03-31 17:21:12,904 - DEBUG - [ANALYZE-1743421872901313700] Getting structured Gemini response...
+2025-03-31 17:21:15,770 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-31 17:21:15,772 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-31 17:21:16,023 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-31 17:21:16,239 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000207A7E081D0>
+2025-03-31 17:21:16,240 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000207A74D3050> server_hostname='api.phidata.com' timeout=60
+2025-03-31 17:21:16,644 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000207A7E082C0>
+2025-03-31 17:21:16,644 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-31 17:21:16,646 - DEBUG - send_request_headers.complete
+2025-03-31 17:21:16,646 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-31 17:21:16,648 - DEBUG - send_request_body.complete
+2025-03-31 17:21:16,648 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-31 17:21:16,852 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 31 Mar 2025 11:51:16 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-31 17:21:16,852 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-31 17:21:16,852 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-31 17:21:16,852 - DEBUG - receive_response_body.complete
+2025-03-31 17:21:16,852 - DEBUG - response_closed.started
+2025-03-31 17:21:16,854 - DEBUG - response_closed.complete
+2025-03-31 17:21:16,854 - DEBUG - close.started
+2025-03-31 17:21:16,855 - DEBUG - close.complete
+2025-03-31 17:21:16,856 - INFO - 127.0.0.1 - - [31/Mar/2025 17:21:16] "POST /analyze HTTP/1.1" 200 -
+2025-03-31 17:21:25,304 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:21:25,305 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:21:25,305 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:21:26,432 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:21:30,150 - INFO - Starting Flask application
+2025-03-31 17:21:30,159 - WARNING -  * Debugger is active!
+2025-03-31 17:21:30,174 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 17:21:31,039 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:21:31,039 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:21:31,040 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:21:31,627 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:21:35,406 - INFO - Starting Flask application
+2025-03-31 17:21:35,416 - WARNING -  * Debugger is active!
+2025-03-31 17:21:35,429 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 17:38:42,614 - INFO - 127.0.0.1 - - [31/Mar/2025 17:38:42] "GET / HTTP/1.1" 200 -
+2025-03-31 17:38:42,644 - INFO - 127.0.0.1 - - [31/Mar/2025 17:38:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 17:38:52,999 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:38:54,557 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:38:58,660 - INFO - Starting Flask application
+2025-03-31 17:38:58,670 - WARNING -  * Debugger is active!
+2025-03-31 17:38:58,684 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 17:39:07,569 - DEBUG - [SCRAPE-1743422947569398800] Starting scrape request
+2025-03-31 17:39:07,571 - DEBUG - [SCRAPE-1743422947569398800] Scraping content...
+2025-03-31 17:39:07,571 - DEBUG - [SCRAPE-1743422947569398800] Starting scrape with Crawl4aiTools
+2025-03-31 17:39:07,572 - DEBUG - Using proactor: IocpProactor
+2025-03-31 17:39:13,532 - DEBUG - [SCRAPE-1743422947569398800] Scrape completed successfully
+2025-03-31 17:39:13,533 - INFO - 127.0.0.1 - - [31/Mar/2025 17:39:13] "POST /scrape HTTP/1.1" 200 -
+2025-03-31 17:39:33,206 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:39:35,100 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:39:39,437 - INFO - Starting Flask application
+2025-03-31 17:39:39,450 - WARNING -  * Debugger is active!
+2025-03-31 17:39:39,467 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 17:39:51,829 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 17:39:53,482 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 17:39:57,282 - INFO - Starting Flask application
+2025-03-31 17:39:57,291 - WARNING -  * Debugger is active!
+2025-03-31 17:39:57,305 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 17:40:10,463 - DEBUG - [ANALYZE-1743423010463119100] Starting analysis request
+2025-03-31 17:40:10,466 - DEBUG - [ANALYZE-1743423010463119100] Getting structured Gemini response...
+2025-03-31 17:40:15,523 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-31 17:40:15,524 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-31 17:40:15,772 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-31 17:40:16,032 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002411CBC9A00>
+2025-03-31 17:40:16,032 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002411C956950> server_hostname='api.phidata.com' timeout=60
+2025-03-31 17:40:16,495 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002411CBC99A0>
+2025-03-31 17:40:16,495 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-31 17:40:16,497 - DEBUG - send_request_headers.complete
+2025-03-31 17:40:16,497 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-31 17:40:16,498 - DEBUG - send_request_body.complete
+2025-03-31 17:40:16,498 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-31 17:40:16,731 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 31 Mar 2025 12:10:16 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-31 17:40:16,732 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-31 17:40:16,732 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-31 17:40:16,732 - DEBUG - receive_response_body.complete
+2025-03-31 17:40:16,732 - DEBUG - response_closed.started
+2025-03-31 17:40:16,732 - DEBUG - response_closed.complete
+2025-03-31 17:40:16,733 - DEBUG - close.started
+2025-03-31 17:40:16,734 - DEBUG - close.complete
+2025-03-31 17:40:16,735 - INFO - 127.0.0.1 - - [31/Mar/2025 17:40:16] "POST /analyze HTTP/1.1" 200 -
+2025-03-31 17:52:59,570 - INFO - 127.0.0.1 - - [31/Mar/2025 17:52:59] "GET / HTTP/1.1" 200 -
+2025-03-31 17:52:59,595 - INFO - 127.0.0.1 - - [31/Mar/2025 17:52:59] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-31 17:53:04,781 - DEBUG - [SCRAPE-1743423784781761600] Starting scrape request
+2025-03-31 17:53:04,782 - DEBUG - [SCRAPE-1743423784781761600] Scraping content...
+2025-03-31 17:53:04,782 - DEBUG - [SCRAPE-1743423784781761600] Starting scrape with Crawl4aiTools
+2025-03-31 17:53:04,782 - DEBUG - Using proactor: IocpProactor
+2025-03-31 17:53:11,178 - DEBUG - [SCRAPE-1743423784781761600] Scrape completed successfully
+2025-03-31 17:53:11,178 - INFO - 127.0.0.1 - - [31/Mar/2025 17:53:11] "POST /scrape HTTP/1.1" 200 -
+2025-03-31 17:53:29,733 - DEBUG - [ANALYZE-1743423809733133700] Starting analysis request
+2025-03-31 17:53:29,735 - DEBUG - [ANALYZE-1743423809733133700] Getting structured Gemini response...
+2025-03-31 17:53:36,073 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-31 17:53:36,074 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-31 17:53:36,328 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-31 17:53:36,568 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002411DB39AF0>
+2025-03-31 17:53:36,568 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002411CAECBD0> server_hostname='api.phidata.com' timeout=60
+2025-03-31 17:53:37,008 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002411DB3A0C0>
+2025-03-31 17:53:37,009 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-31 17:53:37,010 - DEBUG - send_request_headers.complete
+2025-03-31 17:53:37,010 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-31 17:53:37,010 - DEBUG - send_request_body.complete
+2025-03-31 17:53:37,010 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-31 17:53:37,231 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 31 Mar 2025 12:23:36 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-31 17:53:37,232 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-31 17:53:37,232 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-31 17:53:37,232 - DEBUG - receive_response_body.complete
+2025-03-31 17:53:37,232 - DEBUG - response_closed.started
+2025-03-31 17:53:37,234 - DEBUG - response_closed.complete
+2025-03-31 17:53:37,234 - DEBUG - close.started
+2025-03-31 17:53:37,235 - DEBUG - close.complete
+2025-03-31 17:53:37,236 - INFO - 127.0.0.1 - - [31/Mar/2025 17:53:37] "POST /analyze HTTP/1.1" 200 -
+2025-03-31 18:09:01,016 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 18:09:01,027 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 18:09:01,028 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 18:09:02,426 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 18:09:06,424 - INFO - Starting Flask application
+2025-03-31 18:09:06,433 - WARNING -  * Debugger is active!
+2025-03-31 18:09:06,448 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 18:12:56,414 - INFO - 127.0.0.1 - - [31/Mar/2025 18:12:56] "GET / HTTP/1.1" 200 -
+2025-03-31 18:12:56,441 - INFO - 127.0.0.1 - - [31/Mar/2025 18:12:56] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-31 18:12:59,162 - DEBUG - [SCRAPE-1743424979162028600] Starting scrape request
+2025-03-31 18:12:59,164 - DEBUG - [SCRAPE-1743424979162028600] Scraping content...
+2025-03-31 18:12:59,164 - DEBUG - [SCRAPE-1743424979162028600] Starting scrape with Crawl4aiTools
+2025-03-31 18:12:59,165 - DEBUG - Using proactor: IocpProactor
+2025-03-31 18:13:05,698 - DEBUG - [SCRAPE-1743424979162028600] Scrape completed successfully
+2025-03-31 18:13:05,699 - INFO - 127.0.0.1 - - [31/Mar/2025 18:13:05] "POST /scrape HTTP/1.1" 200 -
+2025-03-31 18:13:18,101 - DEBUG - [ANALYZE-1743424998101436600] Starting analysis request
+2025-03-31 18:13:18,104 - DEBUG - [ANALYZE-1743424998101436600] Getting structured Gemini response...
+2025-03-31 18:13:23,969 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-31 18:13:23,970 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-31 18:13:24,229 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-31 18:13:24,499 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001A3439412B0>
+2025-03-31 18:13:24,499 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001A343034350> server_hostname='api.phidata.com' timeout=60
+2025-03-31 18:13:24,952 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001A3439423F0>
+2025-03-31 18:13:24,952 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-31 18:13:24,953 - DEBUG - send_request_headers.complete
+2025-03-31 18:13:24,953 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-31 18:13:24,954 - DEBUG - send_request_body.complete
+2025-03-31 18:13:24,954 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-31 18:13:25,184 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 31 Mar 2025 12:43:24 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-31 18:13:25,185 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-31 18:13:25,185 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-31 18:13:25,186 - DEBUG - receive_response_body.complete
+2025-03-31 18:13:25,186 - DEBUG - response_closed.started
+2025-03-31 18:13:25,186 - DEBUG - response_closed.complete
+2025-03-31 18:13:25,186 - DEBUG - close.started
+2025-03-31 18:13:25,190 - DEBUG - close.complete
+2025-03-31 18:13:25,190 - INFO - 127.0.0.1 - - [31/Mar/2025 18:13:25] "POST /analyze HTTP/1.1" 200 -
+2025-03-31 18:14:00,388 - DEBUG - [ANALYZE-1743425040388622400] Starting analysis request
+2025-03-31 18:14:00,391 - DEBUG - [ANALYZE-1743425040388622400] Getting structured Gemini response...
+2025-03-31 18:14:03,852 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-03-31 18:14:03,853 - DEBUG - load_verify_locations cafile='C:\\Python312\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-03-31 18:14:04,095 - DEBUG - connect_tcp.started host='api.phidata.com' port=443 local_address=None timeout=60 socket_options=None
+2025-03-31 18:14:04,299 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001A3438C54F0>
+2025-03-31 18:14:04,300 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001A342FF14D0> server_hostname='api.phidata.com' timeout=60
+2025-03-31 18:14:04,703 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001A3438C5280>
+2025-03-31 18:14:04,703 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-03-31 18:14:04,704 - DEBUG - send_request_headers.complete
+2025-03-31 18:14:04,704 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-03-31 18:14:04,704 - DEBUG - send_request_body.complete
+2025-03-31 18:14:04,705 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-03-31 18:14:04,918 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 31 Mar 2025 12:44:04 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'72'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn')])
+2025-03-31 18:14:04,919 - INFO - HTTP Request: POST https://api.phidata.com/v1/telemetry/agent/run/create "HTTP/1.1 200 OK"
+2025-03-31 18:14:04,919 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-03-31 18:14:04,919 - DEBUG - receive_response_body.complete
+2025-03-31 18:14:04,919 - DEBUG - response_closed.started
+2025-03-31 18:14:04,919 - DEBUG - response_closed.complete
+2025-03-31 18:14:04,920 - DEBUG - close.started
+2025-03-31 18:14:04,921 - DEBUG - close.complete
+2025-03-31 18:14:04,922 - INFO - 127.0.0.1 - - [31/Mar/2025 18:14:04] "POST /analyze HTTP/1.1" 200 -
+2025-03-31 19:54:23,183 - INFO - Starting Flask application
+2025-03-31 19:54:23,202 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-03-31 19:54:23,202 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 19:54:23,214 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 19:54:26,881 - INFO - Starting Flask application
+2025-03-31 19:54:26,890 - WARNING -  * Debugger is active!
+2025-03-31 19:54:26,905 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 19:54:34,803 - INFO - 127.0.0.1 - - [31/Mar/2025 19:54:34] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-31 19:54:34,812 - INFO - 127.0.0.1 - - [31/Mar/2025 19:54:34] "GET /login HTTP/1.1" 200 -
+2025-03-31 19:54:34,848 - INFO - 127.0.0.1 - - [31/Mar/2025 19:54:34] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-31 19:54:37,572 - INFO - 127.0.0.1 - - [31/Mar/2025 19:54:37] "GET /signup HTTP/1.1" 200 -
+2025-03-31 19:54:37,600 - INFO - 127.0.0.1 - - [31/Mar/2025 19:54:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 19:54:51,955 - INFO - 127.0.0.1 - - [31/Mar/2025 19:54:51] "[32mPOST /signup HTTP/1.1[0m" 302 -
+2025-03-31 19:54:51,961 - INFO - 127.0.0.1 - - [31/Mar/2025 19:54:51] "GET /login HTTP/1.1" 200 -
+2025-03-31 19:54:51,991 - INFO - 127.0.0.1 - - [31/Mar/2025 19:54:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 19:54:59,380 - INFO - 127.0.0.1 - - [31/Mar/2025 19:54:59] "POST /login HTTP/1.1" 200 -
+2025-03-31 19:54:59,401 - INFO - 127.0.0.1 - - [31/Mar/2025 19:54:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 19:55:06,653 - INFO - 127.0.0.1 - - [31/Mar/2025 19:55:06] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-31 19:55:06,662 - INFO - 127.0.0.1 - - [31/Mar/2025 19:55:06] "GET / HTTP/1.1" 200 -
+2025-03-31 19:55:06,690 - INFO - 127.0.0.1 - - [31/Mar/2025 19:55:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:53:57,255 - INFO - Starting Flask application
+2025-03-31 20:53:57,275 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-03-31 20:53:57,275 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 20:53:57,288 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:54:01,230 - INFO - Starting Flask application
+2025-03-31 20:54:01,239 - WARNING -  * Debugger is active!
+2025-03-31 20:54:01,256 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 20:54:08,656 - INFO - 127.0.0.1 - - [31/Mar/2025 20:54:08] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-31 20:54:08,668 - INFO - 127.0.0.1 - - [31/Mar/2025 20:54:08] "GET /login HTTP/1.1" 200 -
+2025-03-31 20:54:08,712 - INFO - 127.0.0.1 - - [31/Mar/2025 20:54:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:54:57,901 - INFO - 127.0.0.1 - - [31/Mar/2025 20:54:57] "GET /signup HTTP/1.1" 200 -
+2025-03-31 20:54:57,957 - INFO - 127.0.0.1 - - [31/Mar/2025 20:54:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:55:30,709 - INFO - 127.0.0.1 - - [31/Mar/2025 20:55:30] "[32mPOST /signup HTTP/1.1[0m" 302 -
+2025-03-31 20:55:30,714 - INFO - 127.0.0.1 - - [31/Mar/2025 20:55:30] "GET /login HTTP/1.1" 200 -
+2025-03-31 20:55:30,760 - INFO - 127.0.0.1 - - [31/Mar/2025 20:55:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:55:38,827 - INFO - 127.0.0.1 - - [31/Mar/2025 20:55:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-31 20:55:38,835 - INFO - 127.0.0.1 - - [31/Mar/2025 20:55:38] "GET / HTTP/1.1" 200 -
+2025-03-31 20:55:38,874 - INFO - 127.0.0.1 - - [31/Mar/2025 20:55:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:56:01,733 - DEBUG - [SCRAPE-1743434761733010300] Starting scrape request
+2025-03-31 20:56:01,734 - DEBUG - [SCRAPE-1743434761733010300] Scraping content...
+2025-03-31 20:56:01,734 - DEBUG - [SCRAPE-1743434761733010300] Starting scrape with Crawl4aiTools
+2025-03-31 20:56:01,735 - DEBUG - Using proactor: IocpProactor
+2025-03-31 20:56:03,103 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\playwright\\_impl\\_connection.py', reloading
+2025-03-31 20:56:03,105 - INFO -  * Detected change in 'C:\\Python312\\Lib\\asyncio\\events.py', reloading
+2025-03-31 20:56:03,105 - INFO -  * Detected change in 'C:\\Python312\\Lib\\asyncio\\base_events.py', reloading
+2025-03-31 20:56:03,108 - INFO -  * Detected change in 'C:\\Python312\\Lib\\asyncio\\windows_events.py', reloading
+2025-03-31 20:56:03,109 - INFO -  * Detected change in 'C:\\Python312\\Lib\\asyncio\\runners.py', reloading
+2025-03-31 20:56:03,110 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\tools\\crawl4ai_tools.py', reloading
+2025-03-31 20:56:03,111 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-03-31 20:56:03,113 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\flask\\app.py', reloading
+2025-03-31 20:56:03,114 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+2025-03-31 20:56:03,116 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+2025-03-31 20:56:03,117 - INFO -  * Detected change in 'C:\\Python312\\Lib\\http\\server.py', reloading
+2025-03-31 20:56:03,119 - INFO -  * Detected change in 'C:\\Python312\\Lib\\socketserver.py', reloading
+2025-03-31 20:56:03,121 - INFO -  * Detected change in 'C:\\Python312\\Lib\\threading.py', reloading
+2025-03-31 20:56:03,135 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\playwright\\_impl\\_browser_type.py', reloading
+2025-03-31 20:56:03,138 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\playwright\\async_api\\_generated.py', reloading
+2025-03-31 20:56:03,140 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\crawl4ai\\browser_manager.py', reloading
+2025-03-31 20:56:03,142 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\crawl4ai\\async_crawler_strategy.py', reloading
+2025-03-31 20:56:03,144 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\crawl4ai\\async_webcrawler.py', reloading
+2025-03-31 20:56:03,996 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:56:09,089 - INFO - Starting Flask application
+2025-03-31 20:56:09,101 - WARNING -  * Debugger is active!
+2025-03-31 20:56:09,116 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 20:56:12,236 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:12] "[31m[1mPOST /scrape HTTP/1.1[0m" 401 -
+2025-03-31 20:56:19,993 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:19] "[31m[1mPOST /scrape HTTP/1.1[0m" 401 -
+2025-03-31 20:56:24,222 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:24] "[31m[1mPOST /scrape HTTP/1.1[0m" 401 -
+2025-03-31 20:56:27,509 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:27] "[31m[1mPOST /scrape HTTP/1.1[0m" 401 -
+2025-03-31 20:56:28,370 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:28] "[31m[1mPOST /scrape HTTP/1.1[0m" 401 -
+2025-03-31 20:56:28,524 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:28] "[31m[1mPOST /scrape HTTP/1.1[0m" 401 -
+2025-03-31 20:56:29,987 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:29] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-31 20:56:30,001 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:30] "GET /login HTTP/1.1" 200 -
+2025-03-31 20:56:30,038 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:56:39,469 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:39] "POST /login HTTP/1.1" 200 -
+2025-03-31 20:56:39,501 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:56:45,789 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:45] "POST /login HTTP/1.1" 200 -
+2025-03-31 20:56:45,816 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:56:50,161 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:50] "POST /login HTTP/1.1" 200 -
+2025-03-31 20:56:50,190 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:56:53,476 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:53] "POST /login HTTP/1.1" 200 -
+2025-03-31 20:56:53,503 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:56:58,259 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:58] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-31 20:56:58,266 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:58] "GET /login HTTP/1.1" 200 -
+2025-03-31 20:56:58,294 - INFO - 127.0.0.1 - - [31/Mar/2025 20:56:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:57:04,458 - INFO - 127.0.0.1 - - [31/Mar/2025 20:57:04] "POST /login HTTP/1.1" 200 -
+2025-03-31 20:57:04,483 - INFO - 127.0.0.1 - - [31/Mar/2025 20:57:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:57:11,274 - INFO - 127.0.0.1 - - [31/Mar/2025 20:57:11] "GET /signup HTTP/1.1" 200 -
+2025-03-31 20:57:11,300 - INFO - 127.0.0.1 - - [31/Mar/2025 20:57:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:57:30,514 - INFO - 127.0.0.1 - - [31/Mar/2025 20:57:30] "GET /signup HTTP/1.1" 200 -
+2025-03-31 20:57:30,551 - INFO - 127.0.0.1 - - [31/Mar/2025 20:57:30] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-31 20:57:41,787 - INFO - 127.0.0.1 - - [31/Mar/2025 20:57:41] "[32mPOST /signup HTTP/1.1[0m" 302 -
+2025-03-31 20:57:41,793 - INFO - 127.0.0.1 - - [31/Mar/2025 20:57:41] "GET /login HTTP/1.1" 200 -
+2025-03-31 20:57:41,826 - INFO - 127.0.0.1 - - [31/Mar/2025 20:57:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:57:52,095 - INFO - 127.0.0.1 - - [31/Mar/2025 20:57:52] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-31 20:57:52,102 - INFO - 127.0.0.1 - - [31/Mar/2025 20:57:52] "GET / HTTP/1.1" 200 -
+2025-03-31 20:57:52,143 - INFO - 127.0.0.1 - - [31/Mar/2025 20:57:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:58:07,688 - DEBUG - [SCRAPE-1743434887688444100] Starting scrape request
+2025-03-31 20:58:07,689 - DEBUG - [SCRAPE-1743434887688444100] Scraping content...
+2025-03-31 20:58:07,689 - DEBUG - [SCRAPE-1743434887688444100] Starting scrape with Crawl4aiTools
+2025-03-31 20:58:07,690 - DEBUG - Using proactor: IocpProactor
+2025-03-31 20:58:10,145 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\playwright\\_impl\\_browser.py', reloading
+2025-03-31 20:58:10,801 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 20:58:15,262 - INFO - Starting Flask application
+2025-03-31 20:58:15,271 - WARNING -  * Debugger is active!
+2025-03-31 20:58:15,287 - INFO -  * Debugger PIN: 129-054-596
+2025-03-31 20:58:22,374 - INFO - 127.0.0.1 - - [31/Mar/2025 20:58:22] "[31m[1mPOST /scrape HTTP/1.1[0m" 401 -
+2025-03-31 20:58:23,053 - INFO - 127.0.0.1 - - [31/Mar/2025 20:58:23] "[31m[1mPOST /scrape HTTP/1.1[0m" 401 -
+2025-03-31 20:58:23,212 - INFO - 127.0.0.1 - - [31/Mar/2025 20:58:23] "[31m[1mPOST /scrape HTTP/1.1[0m" 401 -
+2025-03-31 20:58:23,390 - INFO - 127.0.0.1 - - [31/Mar/2025 20:58:23] "[31m[1mPOST /scrape HTTP/1.1[0m" 401 -
+2025-03-31 20:58:23,613 - INFO - 127.0.0.1 - - [31/Mar/2025 20:58:23] "[31m[1mPOST /scrape HTTP/1.1[0m" 401 -
+2025-03-31 20:58:23,860 - INFO - 127.0.0.1 - - [31/Mar/2025 20:58:23] "[31m[1mPOST /scrape HTTP/1.1[0m" 401 -
+2025-03-31 20:58:43,732 - INFO - 127.0.0.1 - - [31/Mar/2025 20:58:43] "GET /login HTTP/1.1" 200 -
+2025-03-31 20:58:44,404 - INFO - 127.0.0.1 - - [31/Mar/2025 20:58:44] "GET /signup HTTP/1.1" 200 -
+2025-03-31 20:58:52,448 - INFO - 127.0.0.1 - - [31/Mar/2025 20:58:52] "POST /login HTTP/1.1" 200 -
+2025-03-31 20:58:52,467 - INFO - 127.0.0.1 - - [31/Mar/2025 20:58:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:59:03,820 - INFO - 127.0.0.1 - - [31/Mar/2025 20:59:03] "POST /login HTTP/1.1" 200 -
+2025-03-31 20:59:03,838 - INFO - 127.0.0.1 - - [31/Mar/2025 20:59:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:59:16,761 - INFO - 127.0.0.1 - - [31/Mar/2025 20:59:16] "POST /login HTTP/1.1" 200 -
+2025-03-31 20:59:16,777 - INFO - 127.0.0.1 - - [31/Mar/2025 20:59:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 20:59:25,895 - INFO - 127.0.0.1 - - [31/Mar/2025 20:59:25] "POST /login HTTP/1.1" 200 -
+2025-03-31 20:59:25,910 - INFO - 127.0.0.1 - - [31/Mar/2025 20:59:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-31 21:00:34,200 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\agent\\__init__.py', reloading
+2025-03-31 21:00:34,200 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\model\\google\\__init__.py', reloading
+2025-03-31 21:00:34,215 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\agent\\agent.py', reloading
+2025-03-31 21:00:34,218 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic\\__init__.py', reloading
+2025-03-31 21:00:34,219 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\agent\\session.py', reloading
+2025-03-31 21:00:34,222 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\model\\content.py', reloading
+2025-03-31 21:00:34,222 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\run\\response.py', reloading
+2025-03-31 21:00:34,223 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\knowledge\\agent.py', reloading
+2025-03-31 21:00:34,224 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\model\\base.py', reloading
+2025-03-31 21:00:34,225 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\model\\message.py', reloading
+2025-03-31 21:00:34,226 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\memory\\agent.py', reloading
+2025-03-31 21:00:34,226 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\prompt\\template.py', reloading
+2025-03-31 21:00:34,227 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\storage\\agent\\base.py', reloading
+2025-03-31 21:00:34,228 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\tools\\__init__.py', reloading
+2025-03-31 21:00:34,230 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\model\\google\\gemini.py', reloading
+2025-03-31 21:00:34,231 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\tools\\website.py', reloading
+2025-03-31 21:00:34,232 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\tools\\function.py', reloading
+2025-03-31 21:00:34,234 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\google\\generativeai\\__init__.py', reloading
+2025-03-31 21:00:34,235 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-03-31 21:00:34,235 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\google\\generativeai\\types\\content_types.py', reloading
+2025-03-31 21:00:34,236 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\dotenv\\__init__.py', reloading
+2025-03-31 21:00:34,237 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic\\_migration.py', reloading
+2025-03-31 21:00:34,238 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic_core\\__init__.py', reloading
+2025-03-31 21:00:34,239 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic_core\\core_schema.py', reloading
+2025-03-31 21:00:34,240 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic\\aliases.py', reloading
+2025-03-31 21:00:34,241 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic\\config.py', reloading
+2025-03-31 21:00:34,242 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic\\errors.py', reloading
+2025-03-31 21:00:34,243 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic\\fields.py', reloading
+2025-03-31 21:00:34,244 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic\\functional_validators.py', reloading
+2025-03-31 21:00:34,246 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic\\main.py', reloading
+2025-03-31 21:00:34,247 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic\\networks.py', reloading
+2025-03-31 21:00:34,248 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic\\types.py', reloading
+2025-03-31 21:00:34,249 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic\\deprecated\\tools.py', reloading
+2025-03-31 21:00:34,251 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_decorators.py', reloading
+2025-03-31 21:00:34,252 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_model_construction.py', reloading
+2025-03-31 21:00:34,253 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_repr.py', reloading
+2025-03-31 21:00:34,255 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\annotated_types\\__init__.py', reloading
+2025-03-31 21:00:34,255 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_internal_dataclass.py', reloading
+2025-03-31 21:00:34,257 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\pydantic\\_internal\\_generate_schema.py', reloading
+2025-03-31 21:00:34,259 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\memory\\classifier.py', reloading
+2025-03-31 21:00:34,260 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\memory\\db\\__init__.py', reloading
+2025-03-31 21:00:34,261 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\memory\\manager.py', reloading
+2025-03-31 21:00:34,261 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\memory\\memory.py', reloading
+2025-03-31 21:00:34,262 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\memory\\summary.py', reloading
+2025-03-31 21:00:34,262 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\memory\\summarizer.py', reloading
+2025-03-31 21:00:34,263 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\tools\\tool.py', reloading
+2025-03-31 21:00:34,263 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\memory\\db\\base.py', reloading
+2025-03-31 21:00:34,264 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\knowledge\\base.py', reloading
+2025-03-31 21:00:34,264 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\tools\\toolkit.py', reloading
+2025-03-31 21:00:34,266 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\google\\generativeai\\generative_models.py', reloading
+2025-03-31 21:00:34,269 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+2025-03-31 21:00:34,269 - INFO -  * Detected change in 'C:\\Python312\\Lib\\re\\__init__.py', reloading
+2025-03-31 21:00:34,271 - INFO -  * Detected change in 'C:\\Python312\\Lib\\datetime.py', reloading
+2025-03-31 21:00:34,271 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-03-31 21:00:34,271 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\flask\\templating.py', reloading
+2025-03-31 21:00:34,272 - INFO -  * Detected change in 'C:\\Python312\\Lib\\_pydatetime.py', reloading
+2025-03-31 21:00:34,272 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2025-03-31 21:00:34,273 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\datastructures\\__init__.py', reloading
+2025-03-31 21:00:34,273 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\phi\\knowledge\\website.py', reloading
+2025-03-31 21:00:34,274 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2025-03-31 21:00:34,274 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\flask\\typing.py', reloading
+2025-03-31 21:00:34,275 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\flask\\sansio\\app.py', reloading
+2025-03-31 21:00:34,276 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\flask\\config.py', reloading
+2025-03-31 21:00:34,276 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\flask\\sansio\\scaffold.py', reloading
+2025-03-31 21:00:34,277 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\flask\\helpers.py', reloading
+2025-03-31 21:00:34,279 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+2025-03-31 21:00:34,280 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+2025-03-31 21:00:34,281 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\dotenv\\main.py', reloading
+2025-03-31 21:00:34,281 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\flask\\sessions.py', reloading
+2025-03-31 21:00:34,281 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+2025-03-31 21:00:34,282 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+2025-03-31 21:00:34,283 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\AppData\\Roaming\\Python\\Python312\\site-packages\\jinja2\\__init__.py', reloading
+2025-03-31 21:00:34,284 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\_internal.py', reloading
+2025-03-31 21:00:34,284 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+2025-03-31 21:00:34,284 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\AppData\\Roaming\\Python\\Python312\\site-packages\\jinja2\\environment.py', reloading
+2025-03-31 21:00:34,287 - INFO -  * Detected change in 'C:\\Python312\\Lib\\traceback.py', reloading
+2025-03-31 21:00:34,289 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\datastructures\\structures.py', reloading
+2025-03-31 21:00:34,291 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\security.py', reloading
+2025-03-31 21:00:34,292 - INFO -  * Detected change in 'C:\\Python312\\Lib\\secrets.py', reloading
+2025-03-31 21:00:35,400 - INFO -  * Restarting with watchdog (windowsapi)
+2025-03-31 21:00:39,895 - INFO - Starting Flask application
+2025-03-31 21:00:39,906 - WARNING -  * Debugger is active!
+2025-03-31 21:00:39,923 - INFO -  * Debugger PIN: 129-054-596

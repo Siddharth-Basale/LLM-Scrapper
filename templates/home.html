@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraper Pro - Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-dark text-center py-3 sticky-top">
+        <div class="container">
+            <h1 class="text-light fs-4 fs-md-2 mb-0">
+                <i class="fas fa-spider me-2"></i>Web Scraper Pro
+            </h1>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h2 class="mb-4">Welcome to Web Scraper Pro</h2>
+                <p class="lead mb-5">Advanced web scraping and content analysis tool</p>
+                
+                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                    <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg px-4 gap-3">
+                        <i class="fas fa-sign-in-alt me-2"></i>Login
+                    </a>
+                    <a href="{{ url_for('signup') }}" class="btn btn-outline-secondary btn-lg px-4">
+                        <i class="fas fa-user-plus me-2"></i>Sign Up
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-center py-3 text-light mt-5 border-top border-secondary">
+        <div class="container">
+            <span><i class="fas fa-code"></i> with <i class="fas fa-heart text-danger"></i> by Web Scraper Pro</span>
+        </div>
+    </footer>
+</body>
+</html>
