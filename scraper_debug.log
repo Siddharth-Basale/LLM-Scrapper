@@ -1062,3 +1062,264 @@ NameError: name 'Groq' is not defined
 2025-03-31 21:00:39,895 - INFO - Starting Flask application
 2025-03-31 21:00:39,906 - WARNING -  * Debugger is active!
 2025-03-31 21:00:39,923 - INFO -  * Debugger PIN: 129-054-596
+2025-04-16 22:42:01,507 - INFO - Starting Flask application
+2025-04-16 22:42:01,525 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-04-16 22:42:01,526 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 22:42:01,535 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-16 22:42:05,538 - INFO - Starting Flask application
+2025-04-16 22:42:05,548 - WARNING -  * Debugger is active!
+2025-04-16 22:42:05,561 - INFO -  * Debugger PIN: 129-054-596
+2025-04-16 22:42:05,586 - INFO - 127.0.0.1 - - [16/Apr/2025 22:42:05] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-16 22:42:05,594 - INFO - 127.0.0.1 - - [16/Apr/2025 22:42:05] "GET /login HTTP/1.1" 200 -
+2025-04-16 22:42:05,625 - INFO - 127.0.0.1 - - [16/Apr/2025 22:42:05] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-04-16 22:42:05,774 - INFO - 127.0.0.1 - - [16/Apr/2025 22:42:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-16 22:42:15,393 - INFO - 127.0.0.1 - - [16/Apr/2025 22:42:15] "GET /login HTTP/1.1" 200 -
+2025-04-16 22:42:15,436 - INFO - 127.0.0.1 - - [16/Apr/2025 22:42:15] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-04-16 22:42:19,244 - INFO - 127.0.0.1 - - [16/Apr/2025 22:42:19] "GET /signup HTTP/1.1" 200 -
+2025-04-16 22:42:19,274 - INFO - 127.0.0.1 - - [16/Apr/2025 22:42:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:42:46,455 - INFO - 127.0.0.1 - - [16/Apr/2025 22:42:46] "[32mPOST /signup HTTP/1.1[0m" 302 -
+2025-04-16 22:42:46,462 - INFO - 127.0.0.1 - - [16/Apr/2025 22:42:46] "GET /login HTTP/1.1" 200 -
+2025-04-16 22:42:46,504 - INFO - 127.0.0.1 - - [16/Apr/2025 22:42:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:42:53,728 - INFO - 127.0.0.1 - - [16/Apr/2025 22:42:53] "POST /login HTTP/1.1" 200 -
+2025-04-16 22:42:53,755 - INFO - 127.0.0.1 - - [16/Apr/2025 22:42:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:42:56,000 - INFO - 127.0.0.1 - - [16/Apr/2025 22:42:56] "GET /signup HTTP/1.1" 200 -
+2025-04-16 22:42:56,024 - INFO - 127.0.0.1 - - [16/Apr/2025 22:42:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:43:08,131 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:08] "[32mPOST /signup HTTP/1.1[0m" 302 -
+2025-04-16 22:43:08,136 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:08] "GET /login HTTP/1.1" 200 -
+2025-04-16 22:43:08,173 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:43:14,871 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:14] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-16 22:43:14,882 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:14] "GET / HTTP/1.1" 200 -
+2025-04-16 22:43:14,919 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:43:20,369 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:20] "GET / HTTP/1.1" 200 -
+2025-04-16 22:43:20,398 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:43:30,646 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:30] "GET / HTTP/1.1" 200 -
+2025-04-16 22:43:30,692 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:43:40,728 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:40] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-16 22:43:40,735 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:40] "GET /login HTTP/1.1" 200 -
+2025-04-16 22:43:40,774 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:40] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-04-16 22:43:46,700 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:46] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-16 22:43:46,704 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:46] "GET / HTTP/1.1" 200 -
+2025-04-16 22:43:46,731 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:43:52,336 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:52] "GET / HTTP/1.1" 200 -
+2025-04-16 22:43:52,354 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:43:53,152 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:53] "GET / HTTP/1.1" 200 -
+2025-04-16 22:43:53,167 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:43:53,340 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:53] "GET / HTTP/1.1" 200 -
+2025-04-16 22:43:53,353 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:43:53,508 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:53] "GET / HTTP/1.1" 200 -
+2025-04-16 22:43:53,520 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:43:53,664 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:53] "GET / HTTP/1.1" 200 -
+2025-04-16 22:43:53,679 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:43:53,808 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:53] "GET / HTTP/1.1" 200 -
+2025-04-16 22:43:53,826 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:43:53,968 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:53] "GET / HTTP/1.1" 200 -
+2025-04-16 22:43:53,984 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:43:54,146 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:54] "GET / HTTP/1.1" 200 -
+2025-04-16 22:43:54,164 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:43:54,309 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:54] "GET / HTTP/1.1" 200 -
+2025-04-16 22:43:54,328 - INFO - 127.0.0.1 - - [16/Apr/2025 22:43:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:44:02,788 - INFO - 127.0.0.1 - - [16/Apr/2025 22:44:02] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-16 22:44:02,793 - INFO - 127.0.0.1 - - [16/Apr/2025 22:44:02] "GET /login HTTP/1.1" 200 -
+2025-04-16 22:44:02,822 - INFO - 127.0.0.1 - - [16/Apr/2025 22:44:02] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-04-16 22:44:09,134 - INFO - 127.0.0.1 - - [16/Apr/2025 22:44:09] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-16 22:44:09,138 - INFO - 127.0.0.1 - - [16/Apr/2025 22:44:09] "GET / HTTP/1.1" 200 -
+2025-04-16 22:44:09,167 - INFO - 127.0.0.1 - - [16/Apr/2025 22:44:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:44:21,736 - INFO - Starting Flask application
+2025-04-16 22:44:21,756 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-04-16 22:44:21,756 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 22:44:21,764 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-16 22:44:25,596 - INFO - Starting Flask application
+2025-04-16 22:44:25,606 - WARNING -  * Debugger is active!
+2025-04-16 22:44:25,619 - INFO -  * Debugger PIN: 129-054-596
+2025-04-16 22:44:38,615 - INFO - 127.0.0.1 - - [16/Apr/2025 22:44:38] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-16 22:44:38,628 - INFO - 127.0.0.1 - - [16/Apr/2025 22:44:38] "GET /login HTTP/1.1" 200 -
+2025-04-16 22:44:38,673 - INFO - 127.0.0.1 - - [16/Apr/2025 22:44:38] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-04-16 22:44:44,920 - INFO - 127.0.0.1 - - [16/Apr/2025 22:44:44] "POST /login HTTP/1.1" 200 -
+2025-04-16 22:44:44,939 - INFO - 127.0.0.1 - - [16/Apr/2025 22:44:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:47:58,861 - INFO -  * Detected change in 'C:\\Python312\\Lib\\datetime.py', reloading
+2025-04-16 22:47:58,875 - INFO -  * Detected change in 'C:\\Python312\\Lib\\_pydatetime.py', reloading
+2025-04-16 22:47:59,127 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-04-16 22:47:59,139 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-04-16 22:47:59,140 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-04-16 22:48:00,050 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-16 22:48:04,411 - INFO - Starting Flask application
+2025-04-16 22:48:04,422 - WARNING -  * Debugger is active!
+2025-04-16 22:48:04,439 - INFO -  * Debugger PIN: 129-054-596
+2025-04-16 22:50:16,363 - INFO - Starting Flask application
+2025-04-16 22:50:16,381 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-04-16 22:50:16,382 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 22:50:16,393 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-16 22:50:20,432 - INFO - Starting Flask application
+2025-04-16 22:50:20,442 - WARNING -  * Debugger is active!
+2025-04-16 22:50:20,453 - INFO -  * Debugger PIN: 129-054-596
+2025-04-16 22:50:32,466 - INFO - 127.0.0.1 - - [16/Apr/2025 22:50:32] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-16 22:50:32,476 - INFO - 127.0.0.1 - - [16/Apr/2025 22:50:32] "GET /login HTTP/1.1" 200 -
+2025-04-16 22:50:32,522 - INFO - 127.0.0.1 - - [16/Apr/2025 22:50:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:50:49,586 - INFO - 127.0.0.1 - - [16/Apr/2025 22:50:49] "GET /signup HTTP/1.1" 200 -
+2025-04-16 22:50:49,618 - INFO - 127.0.0.1 - - [16/Apr/2025 22:50:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:50:58,318 - INFO - 127.0.0.1 - - [16/Apr/2025 22:50:58] "[32mPOST /signup HTTP/1.1[0m" 302 -
+2025-04-16 22:50:58,324 - INFO - 127.0.0.1 - - [16/Apr/2025 22:50:58] "GET /login HTTP/1.1" 200 -
+2025-04-16 22:50:58,364 - INFO - 127.0.0.1 - - [16/Apr/2025 22:50:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:51:04,925 - INFO - 127.0.0.1 - - [16/Apr/2025 22:51:04] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-16 22:51:04,934 - INFO - 127.0.0.1 - - [16/Apr/2025 22:51:04] "GET / HTTP/1.1" 200 -
+2025-04-16 22:51:04,976 - INFO - 127.0.0.1 - - [16/Apr/2025 22:51:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:51:32,489 - INFO - Starting Flask application
+2025-04-16 22:51:32,512 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-04-16 22:51:32,512 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 22:51:32,525 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-16 22:51:36,602 - INFO - Starting Flask application
+2025-04-16 22:51:36,610 - WARNING -  * Debugger is active!
+2025-04-16 22:51:36,625 - INFO -  * Debugger PIN: 129-054-596
+2025-04-16 22:51:36,655 - INFO - 127.0.0.1 - - [16/Apr/2025 22:51:36] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-16 22:51:36,667 - INFO - 127.0.0.1 - - [16/Apr/2025 22:51:36] "GET /login HTTP/1.1" 200 -
+2025-04-16 22:51:36,695 - INFO - 127.0.0.1 - - [16/Apr/2025 22:51:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 22:51:45,307 - INFO - 127.0.0.1 - - [16/Apr/2025 22:51:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-16 22:51:45,316 - INFO - 127.0.0.1 - - [16/Apr/2025 22:51:45] "GET / HTTP/1.1" 200 -
+2025-04-16 22:51:45,359 - INFO - 127.0.0.1 - - [16/Apr/2025 22:51:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:04:19,315 - INFO - 127.0.0.1 - - [16/Apr/2025 23:04:19] "GET / HTTP/1.1" 200 -
+2025-04-16 23:04:19,356 - INFO - 127.0.0.1 - - [16/Apr/2025 23:04:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:04:21,618 - INFO - 127.0.0.1 - - [16/Apr/2025 23:04:21] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-16 23:04:21,625 - INFO - 127.0.0.1 - - [16/Apr/2025 23:04:21] "GET /home HTTP/1.1" 200 -
+2025-04-16 23:04:21,669 - INFO - 127.0.0.1 - - [16/Apr/2025 23:04:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:04:30,839 - INFO - 127.0.0.1 - - [16/Apr/2025 23:04:30] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-16 23:04:30,850 - INFO - 127.0.0.1 - - [16/Apr/2025 23:04:30] "GET /home HTTP/1.1" 200 -
+2025-04-16 23:04:30,896 - INFO - 127.0.0.1 - - [16/Apr/2025 23:04:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:04:32,198 - INFO - 127.0.0.1 - - [16/Apr/2025 23:04:32] "GET /login HTTP/1.1" 200 -
+2025-04-16 23:04:32,236 - INFO - 127.0.0.1 - - [16/Apr/2025 23:04:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:04:38,094 - INFO - 127.0.0.1 - - [16/Apr/2025 23:04:38] "GET /signup HTTP/1.1" 200 -
+2025-04-16 23:04:38,134 - INFO - 127.0.0.1 - - [16/Apr/2025 23:04:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:04:45,870 - INFO - 127.0.0.1 - - [16/Apr/2025 23:04:45] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-16 23:04:45,877 - INFO - 127.0.0.1 - - [16/Apr/2025 23:04:45] "GET /home HTTP/1.1" 200 -
+2025-04-16 23:04:45,912 - INFO - 127.0.0.1 - - [16/Apr/2025 23:04:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:09:25,829 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-04-16 23:09:25,839 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-04-16 23:09:25,839 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-04-16 23:09:26,812 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-16 23:09:31,172 - INFO - Starting Flask application
+2025-04-16 23:09:31,184 - WARNING -  * Debugger is active!
+2025-04-16 23:09:31,197 - INFO -  * Debugger PIN: 129-054-596
+2025-04-16 23:10:53,971 - INFO - 127.0.0.1 - - [16/Apr/2025 23:10:53] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-16 23:10:53,983 - INFO - 127.0.0.1 - - [16/Apr/2025 23:10:53] "GET /login HTTP/1.1" 200 -
+2025-04-16 23:10:54,019 - INFO - 127.0.0.1 - - [16/Apr/2025 23:10:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:10:57,476 - INFO - 127.0.0.1 - - [16/Apr/2025 23:10:57] "GET /signup HTTP/1.1" 200 -
+2025-04-16 23:10:57,520 - INFO - 127.0.0.1 - - [16/Apr/2025 23:10:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:11:00,157 - INFO - 127.0.0.1 - - [16/Apr/2025 23:11:00] "GET /login HTTP/1.1" 200 -
+2025-04-16 23:11:00,196 - INFO - 127.0.0.1 - - [16/Apr/2025 23:11:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:11:05,380 - INFO - 127.0.0.1 - - [16/Apr/2025 23:11:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-16 23:11:05,400 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\werkzeug\\routing\\map.py', reloading
+2025-04-16 23:11:05,415 - INFO - 127.0.0.1 - - [16/Apr/2025 23:11:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-16 23:11:05,466 - INFO - 127.0.0.1 - - [16/Apr/2025 23:11:05] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-16 23:11:05,467 - INFO - 127.0.0.1 - - [16/Apr/2025 23:11:05] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-16 23:11:05,513 - INFO - 127.0.0.1 - - [16/Apr/2025 23:11:05] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=WGsBqyeeQs4lvzbhrTng HTTP/1.1" 200 -
+2025-04-16 23:11:05,527 - INFO - 127.0.0.1 - - [16/Apr/2025 23:11:05] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-16 23:11:06,577 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-16 23:11:10,488 - INFO - Starting Flask application
+2025-04-16 23:11:10,498 - WARNING -  * Debugger is active!
+2025-04-16 23:11:10,515 - INFO -  * Debugger PIN: 129-054-596
+2025-04-16 23:12:04,469 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-04-16 23:12:04,470 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-04-16 23:12:04,470 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-04-16 23:12:05,644 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-16 23:12:10,215 - INFO - Starting Flask application
+2025-04-16 23:12:10,226 - WARNING -  * Debugger is active!
+2025-04-16 23:12:10,244 - INFO -  * Debugger PIN: 129-054-596
+2025-04-16 23:12:19,539 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:19] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-16 23:12:19,561 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:19] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-16 23:12:19,602 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:19] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:12:19,603 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:19] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-16 23:12:19,613 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:19] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=Zcu89acC53GilTXxkALv HTTP/1.1" 200 -
+2025-04-16 23:12:31,653 - INFO - Starting Flask application
+2025-04-16 23:12:31,670 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-04-16 23:12:31,671 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 23:12:31,682 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-16 23:12:35,822 - INFO - Starting Flask application
+2025-04-16 23:12:35,832 - WARNING -  * Debugger is active!
+2025-04-16 23:12:35,847 - INFO -  * Debugger PIN: 129-054-596
+2025-04-16 23:12:35,876 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:35] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-16 23:12:35,888 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:35] "GET /login HTTP/1.1" 200 -
+2025-04-16 23:12:35,923 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:12:48,683 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-16 23:12:48,692 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:48] "GET / HTTP/1.1" 200 -
+2025-04-16 23:12:48,751 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:12:51,090 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:51] "GET /admin/db-viewer HTTP/1.1" 200 -
+2025-04-16 23:12:51,135 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:12:56,622 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:56] "GET /admin/db-viewer HTTP/1.1" 200 -
+2025-04-16 23:12:56,666 - INFO - 127.0.0.1 - - [16/Apr/2025 23:12:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:13:00,344 - INFO - 127.0.0.1 - - [16/Apr/2025 23:13:00] "GET /admin/db-viewer HTTP/1.1" 200 -
+2025-04-16 23:13:00,388 - INFO - 127.0.0.1 - - [16/Apr/2025 23:13:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:13:17,413 - INFO - 127.0.0.1 - - [16/Apr/2025 23:13:17] "GET /admin/db-viewer HTTP/1.1" 200 -
+2025-04-16 23:13:17,449 - INFO - 127.0.0.1 - - [16/Apr/2025 23:13:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:16:31,820 - INFO - Starting Flask application
+2025-04-16 23:16:31,837 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-04-16 23:16:31,837 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 23:16:31,849 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-16 23:16:35,862 - INFO - Starting Flask application
+2025-04-16 23:16:35,875 - WARNING -  * Debugger is active!
+2025-04-16 23:16:35,890 - INFO -  * Debugger PIN: 129-054-596
+2025-04-16 23:16:35,926 - INFO - 127.0.0.1 - - [16/Apr/2025 23:16:35] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-16 23:16:35,938 - INFO - 127.0.0.1 - - [16/Apr/2025 23:16:35] "GET /login HTTP/1.1" 200 -
+2025-04-16 23:16:35,978 - INFO - 127.0.0.1 - - [16/Apr/2025 23:16:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:16:54,590 - INFO - 127.0.0.1 - - [16/Apr/2025 23:16:54] "GET /signup HTTP/1.1" 200 -
+2025-04-16 23:16:54,632 - INFO - 127.0.0.1 - - [16/Apr/2025 23:16:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:17:11,030 - INFO - 127.0.0.1 - - [16/Apr/2025 23:17:11] "[32mPOST /signup HTTP/1.1[0m" 302 -
+2025-04-16 23:17:11,036 - INFO - 127.0.0.1 - - [16/Apr/2025 23:17:11] "GET /login HTTP/1.1" 200 -
+2025-04-16 23:17:11,080 - INFO - 127.0.0.1 - - [16/Apr/2025 23:17:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:17:25,690 - INFO - 127.0.0.1 - - [16/Apr/2025 23:17:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-16 23:17:25,700 - INFO - 127.0.0.1 - - [16/Apr/2025 23:17:25] "GET / HTTP/1.1" 200 -
+2025-04-16 23:17:25,751 - INFO - 127.0.0.1 - - [16/Apr/2025 23:17:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:17:29,304 - INFO - 127.0.0.1 - - [16/Apr/2025 23:17:29] "GET /admin/db-viewer HTTP/1.1" 200 -
+2025-04-16 23:17:29,342 - INFO - 127.0.0.1 - - [16/Apr/2025 23:17:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:18:24,015 - INFO - 127.0.0.1 - - [16/Apr/2025 23:18:24] "GET /admin/db-viewer HTTP/1.1" 200 -
+2025-04-16 23:18:24,051 - INFO - 127.0.0.1 - - [16/Apr/2025 23:18:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:20:09,281 - INFO -  * Detected change in 'C:\\Python312\\Lib\\site-packages\\_pytest\\junitxml.py', reloading
+2025-04-16 23:20:09,613 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-04-16 23:20:09,625 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-04-16 23:20:09,625 - INFO -  * Detected change in 'C:\\Users\\Lenovo\\Desktop\\New folder\\LLM-Scraper\\app.py', reloading
+2025-04-16 23:20:10,403 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-16 23:21:00,218 - INFO - Starting Flask application
+2025-04-16 23:21:00,236 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.185:5000
+2025-04-16 23:21:00,236 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 23:21:00,246 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-16 23:21:04,330 - INFO - Starting Flask application
+2025-04-16 23:21:04,340 - WARNING -  * Debugger is active!
+2025-04-16 23:21:04,351 - INFO -  * Debugger PIN: 129-054-596
+2025-04-16 23:21:07,293 - INFO - 127.0.0.1 - - [16/Apr/2025 23:21:07] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-16 23:21:07,312 - INFO - 127.0.0.1 - - [16/Apr/2025 23:21:07] "GET /login HTTP/1.1" 200 -
+2025-04-16 23:21:07,348 - INFO - 127.0.0.1 - - [16/Apr/2025 23:21:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:21:18,673 - INFO - 127.0.0.1 - - [16/Apr/2025 23:21:18] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-16 23:21:18,685 - INFO - 127.0.0.1 - - [16/Apr/2025 23:21:18] "GET / HTTP/1.1" 200 -
+2025-04-16 23:21:18,733 - INFO - 127.0.0.1 - - [16/Apr/2025 23:21:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:21:20,799 - INFO - 127.0.0.1 - - [16/Apr/2025 23:21:20] "[35m[1mGET /admin/db-viewer HTTP/1.1[0m" 500 -
+2025-04-16 23:21:20,842 - INFO - 127.0.0.1 - - [16/Apr/2025 23:21:20] "GET /admin/db-viewer?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-16 23:21:20,844 - INFO - 127.0.0.1 - - [16/Apr/2025 23:21:20] "GET /admin/db-viewer?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-16 23:21:20,878 - INFO - 127.0.0.1 - - [16/Apr/2025 23:21:20] "GET /admin/db-viewer?__debugger__=yes&cmd=resource&f=console.png&s=b9G5hCAMw3dZfBIkdNWS HTTP/1.1" 200 -
+2025-04-16 23:21:20,895 - INFO - 127.0.0.1 - - [16/Apr/2025 23:21:20] "GET /admin/db-viewer?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-16 23:21:54,613 - INFO - 127.0.0.1 - - [16/Apr/2025 23:21:54] "GET /admin/db-viewer HTTP/1.1" 200 -
+2025-04-16 23:21:54,647 - INFO - 127.0.0.1 - - [16/Apr/2025 23:21:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:21:59,496 - INFO - 127.0.0.1 - - [16/Apr/2025 23:21:59] "GET /admin/db-viewer HTTP/1.1" 200 -
+2025-04-16 23:21:59,537 - INFO - 127.0.0.1 - - [16/Apr/2025 23:21:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:22:08,102 - INFO - 127.0.0.1 - - [16/Apr/2025 23:22:08] "POST /admin/db-viewer HTTP/1.1" 200 -
+2025-04-16 23:22:08,141 - INFO - 127.0.0.1 - - [16/Apr/2025 23:22:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-16 23:22:14,471 - INFO - 127.0.0.1 - - [16/Apr/2025 23:22:14] "GET / HTTP/1.1" 200 -
+2025-04-16 23:22:14,504 - INFO - 127.0.0.1 - - [16/Apr/2025 23:22:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -

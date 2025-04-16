@@ -1,362 +1,475 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced Web Scraper & Analyzer</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='css/style.css') }}"
+      rel="stylesheet"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <!-- Add marked.js for markdown rendering -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header with Theme Toggle -->
     <header class="bg-dark text-center py-3 sticky-top">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="text-light fs-4 fs-md-2 mb-0">
-                <i class="fas fa-spider me-2"></i>Web Scraper Pro
-            </h1>
-            <div>
-                <button id="theme-toggle" class="btn btn-sm btn-outline-secondary">
-                    <i class="fas fa-moon"></i> <span class="d-none d-md-inline">Dark Mode</span>
-                </button>
-            </div>
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="text-light fs-4 fs-md-2 mb-0">
+          <i class="fas fa-spider me-2"></i>Web Scraper Pro
+        </h1>
+        <div>
+          <button id="theme-toggle" class="btn btn-sm btn-outline-secondary">
+            <i class="fas fa-moon"></i>
+            <span class="d-none d-md-inline">Dark Mode</span>
+          </button>
+          <a
+            href="{{ url_for('logout') }}"
+            class="btn btn-sm btn-outline-danger ms-2"
+          >
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="d-none d-md-inline">Logout</span>
+            <a
+              href="{{ url_for('db_viewer') }}"
+              class="btn btn-sm btn-outline-info ms-2"
+            >
+              <i class="fas fa-database"></i>
+              <span class="d-none d-md-inline">DB Viewer</span>
+            </a>
+          </a>
         </div>
+      </div>
     </header>
 
     <!-- Main Container -->
     <div class="container mt-4 mb-5">
-        <!-- Alert Container -->
-        <div id="alert-container" class="position-fixed top-0 end-0 p-3" style="z-index: 1100"></div>
+      <!-- Alert Container -->
+      <div
+        id="alert-container"
+        class="position-fixed top-0 end-0 p-3"
+        style="z-index: 1100"
+      ></div>
 
-        <!-- Scrape URL Section -->
-        <section class="mb-5 card bg-dark border-secondary">
-            <div class="card-body">
-                <form id="scrape-form">
-                    <h2 class="text-center mb-4 text-light fs-5 fs-md-3">
-                        <i class="fas fa-globe me-2"></i>Scrape a URL
-                    </h2>
-                    <div class="row g-2">
-                        <div class="col-12 col-md-9">
-                            <div class="input-group">
-                                <span class="input-group-text"><i class="fas fa-link"></i></span>
-                                <input type="text" id="url" class="form-control" 
-                                       placeholder="https://example.com" required>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <button type="submit" class="btn btn-primary w-100" id="scrape-button">
-                                <span id="scrape-button-text">Scrape</span>
-                                <span id="scrape-spinner" class="spinner-border spinner-border-sm d-none" role="status"></span>
-                            </button>
-                        </div>
-                    </div>
-                    <p class="mt-2 text-muted small">
-                        <i class="fas fa-info-circle me-1"></i> Enter a full URL (e.g., <code>https://www.example.com</code>)
-                    </p>
-                </form>
-            </div>
-        </section>
-
-        <!-- Scraped Content Section -->
-        <section id="content-section" class="d-none card bg-dark border-secondary">
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h2 class="text-light fs-5 fs-md-3">
-                        <i class="fas fa-file-alt me-2"></i>Scraped Content
-                    </h2>
-                    <div class="btn-group">
-                        <button class="btn btn-sm btn-outline-secondary" id="copy-content" title="Copy to clipboard">
-                            <i class="fas fa-copy"></i> <span class="d-none d-md-inline">Copy</span>
-                        </button>
-                        <button class="btn btn-sm btn-outline-secondary" id="clear-all" title="Clear all">
-                            <i class="fas fa-trash-alt"></i> <span class="d-none d-md-inline">Clear</span>
-                        </button>
-                    </div>
+      <!-- Scrape URL Section -->
+      <section class="mb-5 card bg-dark border-secondary">
+        <div class="card-body">
+          <form id="scrape-form">
+            <h2 class="text-center mb-4 text-light fs-5 fs-md-3">
+              <i class="fas fa-globe me-2"></i>Scrape a URL
+            </h2>
+            <div class="row g-2">
+              <div class="col-12 col-md-9">
+                <div class="input-group">
+                  <span class="input-group-text"
+                    ><i class="fas fa-link"></i
+                  ></span>
+                  <input
+                    type="text"
+                    id="url"
+                    class="form-control"
+                    placeholder="https://example.com"
+                    required
+                  />
                 </div>
-                <div id="content-display" class="parsed-results-box p-3" style="max-height: 300px; overflow-y: auto;"></div>
+              </div>
+              <div class="col-12 col-md-3">
+                <button
+                  type="submit"
+                  class="btn btn-primary w-100"
+                  id="scrape-button"
+                >
+                  <span id="scrape-button-text">Scrape</span>
+                  <span
+                    id="scrape-spinner"
+                    class="spinner-border spinner-border-sm d-none"
+                    role="status"
+                  ></span>
+                </button>
+              </div>
             </div>
-        </section>
+            <p class="mt-2 text-muted small">
+              <i class="fas fa-info-circle me-1"></i> Enter a full URL (e.g.,
+              <code>https://www.example.com</code>)
+            </p>
+          </form>
+        </div>
+      </section>
 
-        <!-- Analyze Content Section -->
-        <section id="analyze-section" class="d-none mt-5 card bg-dark border-secondary">
-            <div class="card-body">
-                <form id="analyze-form">
-                    <h2 class="text-center mb-4 text-light fs-5 fs-md-3">
-                        <i class="fas fa-robot me-2"></i>Analyze Content
-                    </h2>
-                    <div class="mb-3">
-                        <label for="analysis-prompt" class="form-label text-light">
-                            <i class="fas fa-question-circle me-1"></i> What would you like to know about this content?
-                        </label>
-                        <textarea id="analysis-prompt" class="form-control" rows="3"
-                                  placeholder="Example: 'Summarize the main points' or 'Extract all product names and prices'" required></textarea>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <button type="submit" class="btn btn-success" id="analyze-button">
-                            <span id="analyze-button-text">Analyze</span>
-                            <span id="analyze-spinner" class="spinner-border spinner-border-sm d-none" role="status"></span>
-                        </button>
-                    </div>
-                </form>
-
-                <!-- Analysis Results -->
-                <div class="mt-4">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h3 class="text-light fs-6 fs-md-4">
-                            <i class="fas fa-list-check me-2"></i>Analysis Results
-                        </h3>
-                        <button class="btn btn-sm btn-outline-secondary" id="copy-analysis" title="Copy to clipboard">
-                            <i class="fas fa-copy"></i> <span class="d-none d-md-inline">Copy</span>
-                        </button>
-                    </div>
-                    <div id="analysis-results" class="parsed-results-box p-3" style="max-height: 300px; overflow-y: auto;"></div>
-                </div>
+      <!-- Scraped Content Section -->
+      <section
+        id="content-section"
+        class="d-none card bg-dark border-secondary"
+      >
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="text-light fs-5 fs-md-3">
+              <i class="fas fa-file-alt me-2"></i>Scraped Content
+            </h2>
+            <div class="btn-group">
+              <button
+                class="btn btn-sm btn-outline-secondary"
+                id="copy-content"
+                title="Copy to clipboard"
+              >
+                <i class="fas fa-copy"></i>
+                <span class="d-none d-md-inline">Copy</span>
+              </button>
+              <button
+                class="btn btn-sm btn-outline-secondary"
+                id="clear-all"
+                title="Clear all"
+              >
+                <i class="fas fa-trash-alt"></i>
+                <span class="d-none d-md-inline">Clear</span>
+              </button>
             </div>
-        </section>
+          </div>
+          <div
+            id="content-display"
+            class="parsed-results-box p-3"
+            style="max-height: 300px; overflow-y: auto"
+          ></div>
+        </div>
+      </section>
+
+      <!-- Analyze Content Section -->
+      <section
+        id="analyze-section"
+        class="d-none mt-5 card bg-dark border-secondary"
+      >
+        <div class="card-body">
+          <form id="analyze-form">
+            <h2 class="text-center mb-4 text-light fs-5 fs-md-3">
+              <i class="fas fa-robot me-2"></i>Analyze Content
+            </h2>
+            <div class="mb-3">
+              <label for="analysis-prompt" class="form-label text-light">
+                <i class="fas fa-question-circle me-1"></i> What would you like
+                to know about this content?
+              </label>
+              <textarea
+                id="analysis-prompt"
+                class="form-control"
+                rows="3"
+                placeholder="Example: 'Summarize the main points' or 'Extract all product names and prices'"
+                required
+              ></textarea>
+            </div>
+            <div class="d-flex justify-content-end">
+              <button type="submit" class="btn btn-success" id="analyze-button">
+                <span id="analyze-button-text">Analyze</span>
+                <span
+                  id="analyze-spinner"
+                  class="spinner-border spinner-border-sm d-none"
+                  role="status"
+                ></span>
+              </button>
+            </div>
+          </form>
+
+          <!-- Analysis Results -->
+          <div class="mt-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h3 class="text-light fs-6 fs-md-4">
+                <i class="fas fa-list-check me-2"></i>Analysis Results
+              </h3>
+              <button
+                class="btn btn-sm btn-outline-secondary"
+                id="copy-analysis"
+                title="Copy to clipboard"
+              >
+                <i class="fas fa-copy"></i>
+                <span class="d-none d-md-inline">Copy</span>
+              </button>
+            </div>
+            <div
+              id="analysis-results"
+              class="parsed-results-box p-3"
+              style="max-height: 300px; overflow-y: auto"
+            ></div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-center py-3 text-light mt-5 border-top border-secondary">
-        <div class="container">
-            <div class="d-flex flex-wrap justify-content-center align-items-center">
-                <span class="me-3"><i class="fas fa-code"></i> with <i class="fas fa-heart text-danger"></i> by Web Scraper Pro</span>
-                <span class="me-3"><i class="fas fa-clock"></i> <span id="current-time"></span></span>
-                <span><i class="fas fa-server"></i> Status: <span class="text-success" id="api-status">Operational</span></span>
-            </div>
+    <footer
+      class="bg-dark text-center py-3 text-light mt-5 border-top border-secondary"
+    >
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-center align-items-center">
+          <span class="me-3"
+            ><i class="fas fa-code"></i> with
+            <i class="fas fa-heart text-danger"></i> by Web Scraper Pro</span
+          >
+          <span class="me-3"
+            ><i class="fas fa-clock"></i> <span id="current-time"></span
+          ></span>
+          <span
+            ><i class="fas fa-server"></i> Status:
+            <span class="text-success" id="api-status">Operational</span></span
+          >
         </div>
+      </div>
     </footer>
 
     <script>
-        // Global state
-        let currentTheme = 'dark';
-        let lastScrapedUrl = '';
-        let currentContent = '';
+      // Global state
+      let currentTheme = "dark";
+      let lastScrapedUrl = "";
+      let currentContent = "";
 
-        // Configure marked.js
-        marked.setOptions({
-            breaks: true,
-            gfm: true
+      // Configure marked.js
+      marked.setOptions({
+        breaks: true,
+        gfm: true,
+      });
+
+      $(document).ready(function () {
+        // Initialize UI components
+        initTheme();
+        updateClock();
+        setInterval(updateClock, 1000);
+        checkApiStatus();
+
+        // Theme Toggle
+        $("#theme-toggle").on("click", toggleTheme);
+
+        // Scrape Form Handling
+        $("#scrape-form").on("submit", handleScrapeSubmit);
+
+        // Analyze Form Handling
+        $("#analyze-form").on("submit", handleAnalyzeSubmit);
+
+        // Copy buttons
+        $("#copy-content").on("click", () =>
+          copyToClipboard("content-display")
+        );
+        $("#copy-analysis").on("click", () =>
+          copyToClipboard("analysis-results")
+        );
+
+        // Clear buttons
+        $("#clear-all").on("click", clearAll);
+
+        // Initialize tooltips
+        $("[title]").tooltip({
+          trigger: "hover",
+          delay: { show: 500, hide: 100 },
         });
+      });
 
-        $(document).ready(function () {
-            // Initialize UI components
-            initTheme();
-            updateClock();
-            setInterval(updateClock, 1000);
-            checkApiStatus();
+      // Initialize theme from localStorage
+      function initTheme() {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        setTheme(savedTheme === "dark");
+      }
 
-            // Theme Toggle
-            $('#theme-toggle').on('click', toggleTheme);
+      // Toggle between dark and light theme
+      function toggleTheme() {
+        const isDark = $("html").attr("data-bs-theme") === "dark";
+        setTheme(!isDark);
+      }
 
-            // Scrape Form Handling
-            $('#scrape-form').on('submit', handleScrapeSubmit);
+      // Apply theme settings
+      function setTheme(isDark) {
+        currentTheme = isDark ? "dark" : "light";
+        $("html").attr("data-bs-theme", currentTheme);
+        $("#theme-toggle").html(
+          `<i class="fas ${
+            isDark ? "fa-sun" : "fa-moon"
+          }"></i> <span class="d-none d-md-inline">${
+            isDark ? "Light" : "Dark"
+          } Mode</span>`
+        );
+        localStorage.setItem("theme", currentTheme);
+      }
 
-            // Analyze Form Handling
-            $('#analyze-form').on('submit', handleAnalyzeSubmit);
+      // Handle scrape form submission
+      function handleScrapeSubmit(event) {
+        event.preventDefault();
+        const url = $("#url").val().trim();
 
-            // Copy buttons
-            $('#copy-content').on('click', () => copyToClipboard('content-display'));
-            $('#copy-analysis').on('click', () => copyToClipboard('analysis-results'));
+        if (!url) {
+          showAlert("Please enter a valid URL", "warning");
+          return;
+        }
 
-            // Clear buttons
-            $('#clear-all').on('click', clearAll);
+        lastScrapedUrl = url;
 
-            // Initialize tooltips
-            $('[title]').tooltip({ trigger: 'hover', delay: { show: 500, hide: 100 } });
+        // Show loading state
+        $("#scrape-button-text").text("Scraping...");
+        $("#scrape-spinner").removeClass("d-none");
+        $("#scrape-button").prop("disabled", true);
+
+        // Clear previous results
+        $("#content-display").text("");
+        $("#analysis-results").html("");
+        $("#analyze-section").addClass("d-none");
+
+        $.ajax({
+          url: "/scrape",
+          method: "POST",
+          data: { url },
+          success: function (response) {
+            if (response.status === "error") {
+              showAlert(response.error, "danger");
+              return;
+            }
+
+            $("#content-section").removeClass("d-none");
+            $("#analyze-section").removeClass("d-none");
+            $("#content-display").text(response.content);
+            currentContent = response.content;
+
+            showAlert("Content scraped successfully!", "success");
+          },
+          error: function (xhr) {
+            const error = xhr.responseJSON?.error || "Failed to scrape URL";
+            showAlert(error, "danger");
+          },
+          complete: function () {
+            $("#scrape-button-text").text("Scrape");
+            $("#scrape-spinner").addClass("d-none");
+            $("#scrape-button").prop("disabled", false);
+          },
         });
+      }
 
-        // Initialize theme from localStorage
-        function initTheme() {
-            const savedTheme = localStorage.getItem('theme') || 'dark';
-            setTheme(savedTheme === 'dark');
+      // Handle analyze form submission
+      function handleAnalyzeSubmit(event) {
+        event.preventDefault();
+        const prompt = $("#analysis-prompt").val().trim();
+
+        if (!currentContent) {
+          showAlert(
+            "No content to analyze. Please scrape a URL first.",
+            "warning"
+          );
+          return;
         }
 
-        // Toggle between dark and light theme
-        function toggleTheme() {
-            const isDark = $('html').attr('data-bs-theme') === 'dark';
-            setTheme(!isDark);
+        if (!prompt) {
+          showAlert("Please enter an analysis prompt", "warning");
+          return;
         }
 
-        // Apply theme settings
-        function setTheme(isDark) {
-            currentTheme = isDark ? 'dark' : 'light';
-            $('html').attr('data-bs-theme', currentTheme);
-            $('#theme-toggle').html(
-                `<i class="fas ${isDark ? 'fa-sun' : 'fa-moon'}"></i> <span class="d-none d-md-inline">${isDark ? 'Light' : 'Dark'} Mode</span>`
-            );
-            localStorage.setItem('theme', currentTheme);
-        }
+        // Show loading state
+        $("#analyze-button-text").text("Analyzing...");
+        $("#analyze-spinner").removeClass("d-none");
+        $("#analyze-button").prop("disabled", true);
 
-        // Handle scrape form submission
-        function handleScrapeSubmit(event) {
-            event.preventDefault();
-            const url = $('#url').val().trim();
-            
-            if (!url) {
-                showAlert('Please enter a valid URL', 'warning');
-                return;
+        $.ajax({
+          url: "/analyze",
+          method: "POST",
+          data: {
+            content: currentContent,
+            prompt: prompt,
+          },
+          // In your handleAnalyzeSubmit function's success handler:
+          success: function (response) {
+            if (response.status === "error") {
+              showAlert(response.error, "danger");
+              return;
             }
 
-            lastScrapedUrl = url;
-            
-            // Show loading state
-            $('#scrape-button-text').text('Scraping...');
-            $('#scrape-spinner').removeClass('d-none');
-            $('#scrape-button').prop('disabled', true);
-            
-            // Clear previous results
-            $('#content-display').text('');
-            $('#analysis-results').html('');
-            $('#analyze-section').addClass('d-none');
+            // Additional cleaning for any remaining raw markdown
+            let cleanAnalysis = response.analysis
+              .replace(/\\n/g, "\n") // Unescape newlines
+              .replace(/(?<!\*)\*(?!\*)/g, ""); // Remove single asterisks
 
-            $.ajax({
-                url: '/scrape',
-                method: 'POST',
-                data: { url },
-                success: function (response) {
-                    if (response.status === 'error') {
-                        showAlert(response.error, 'danger');
-                        return;
-                    }
-                    
-                    $('#content-section').removeClass('d-none');
-                    $('#analyze-section').removeClass('d-none');
-                    $('#content-display').text(response.content);
-                    currentContent = response.content;
-                    
-                    showAlert('Content scraped successfully!', 'success');
-                },
-                error: function(xhr) {
-                    const error = xhr.responseJSON?.error || 'Failed to scrape URL';
-                    showAlert(error, 'danger');
-                },
-                complete: function() {
-                    $('#scrape-button-text').text('Scrape');
-                    $('#scrape-spinner').addClass('d-none');
-                    $('#scrape-button').prop('disabled', false);
-                }
-            });
+            // Convert markdown to HTML
+            const htmlContent = marked.parse(cleanAnalysis);
+            $("#analysis-results").html(htmlContent);
+            showAlert("Analysis completed successfully!", "success");
+          },
+          error: function (xhr) {
+            const error =
+              xhr.responseJSON?.error || "Failed to analyze content";
+            showAlert(error, "danger");
+          },
+          complete: function () {
+            $("#analyze-button-text").text("Analyze");
+            $("#analyze-spinner").addClass("d-none");
+            $("#analyze-button").prop("disabled", false);
+          },
+        });
+      }
+
+      // Copy text to clipboard
+      function copyToClipboard(elementId) {
+        const element = document.getElementById(elementId);
+
+        if (!element.textContent.trim()) {
+          showAlert("Nothing to copy", "warning");
+          return;
         }
 
-        // Handle analyze form submission
-        function handleAnalyzeSubmit(event) {
-            event.preventDefault();
-            const prompt = $('#analysis-prompt').val().trim();
-            
-            if (!currentContent) {
-                showAlert('No content to analyze. Please scrape a URL first.', 'warning');
-                return;
-            }
-            
-            if (!prompt) {
-                showAlert('Please enter an analysis prompt', 'warning');
-                return;
-            }
+        // For analysis results, we want to copy the raw text without HTML tags
+        let text = element.textContent;
 
-            // Show loading state
-            $('#analyze-button-text').text('Analyzing...');
-            $('#analyze-spinner').removeClass('d-none');
-            $('#analyze-button').prop('disabled', true);
-            
-            $.ajax({
-                url: '/analyze',
-                method: 'POST',
-                data: {
-                    content: currentContent,
-                    prompt: prompt
-                },
-               // In your handleAnalyzeSubmit function's success handler:
-success: function(response) {
-    if (response.status === 'error') {
-        showAlert(response.error, 'danger');
-        return;
-    }
-    
-    // Additional cleaning for any remaining raw markdown
-    let cleanAnalysis = response.analysis
-        .replace(/\\n/g, '\n')  // Unescape newlines
-        .replace(/(?<!\*)\*(?!\*)/g, '');  // Remove single asterisks
-    
-    // Convert markdown to HTML
-    const htmlContent = marked.parse(cleanAnalysis);
-    $('#analysis-results').html(htmlContent);
-    showAlert('Analysis completed successfully!', 'success');
-},
-                error: function(xhr) {
-                    const error = xhr.responseJSON?.error || 'Failed to analyze content';
-                    showAlert(error, 'danger');
-                },
-                complete: function() {
-                    $('#analyze-button-text').text('Analyze');
-                    $('#analyze-spinner').addClass('d-none');
-                    $('#analyze-button').prop('disabled', false);
-                }
-            });
-        }
+        navigator.clipboard
+          .writeText(text)
+          .then(() => {
+            showAlert("Copied to clipboard!", "success");
+          })
+          .catch((err) => {
+            showAlert("Failed to copy: " + err, "danger");
+          });
+      }
 
-        // Copy text to clipboard
-        function copyToClipboard(elementId) {
-            const element = document.getElementById(elementId);
-            
-            if (!element.textContent.trim()) {
-                showAlert('Nothing to copy', 'warning');
-                return;
-            }
-            
-            // For analysis results, we want to copy the raw text without HTML tags
-            let text = element.textContent;
-            
-            navigator.clipboard.writeText(text).then(() => {
-                showAlert('Copied to clipboard!', 'success');
-            }).catch(err => {
-                showAlert('Failed to copy: ' + err, 'danger');
-            });
-        }
+      // Clear all content
+      function clearAll() {
+        $("#content-display").text("");
+        $("#analysis-results").html("");
+        $("#url").val("");
+        $("#analysis-prompt").val("");
+        currentContent = "";
+        showAlert("All content cleared", "info");
+      }
 
-        // Clear all content
-        function clearAll() {
-            $('#content-display').text('');
-            $('#analysis-results').html('');
-            $('#url').val('');
-            $('#analysis-prompt').val('');
-            currentContent = '';
-            showAlert('All content cleared', 'info');
-        }
-
-        // Show alert message
-        function showAlert(message, type) {
-            const alertId = 'alert-' + Date.now();
-            const alertHtml = `
+      // Show alert message
+      function showAlert(message, type) {
+        const alertId = "alert-" + Date.now();
+        const alertHtml = `
                 <div id="${alertId}" class="alert alert-${type} alert-dismissible fade show" role="alert">
                     ${message}
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             `;
-            
-            $('#alert-container').append(alertHtml);
-            
-            // Auto-dismiss after 5 seconds
-            setTimeout(() => {
-                $('#' + alertId).alert('close');
-            }, 5000);
-        }
 
-        // Update clock in footer
-        function updateClock() {
-            const now = new Date();
-            $('#current-time').text(now.toLocaleTimeString());
-        }
+        $("#alert-container").append(alertHtml);
 
-        // Check API status
-        function checkApiStatus() {
-            // In a real app, you would ping your API endpoint
-            $('#api-status').removeClass('text-danger text-warning').addClass('text-success')
-                .text('Operational');
-        }
+        // Auto-dismiss after 5 seconds
+        setTimeout(() => {
+          $("#" + alertId).alert("close");
+        }, 5000);
+      }
+
+      // Update clock in footer
+      function updateClock() {
+        const now = new Date();
+        $("#current-time").text(now.toLocaleTimeString());
+      }
+
+      // Check API status
+      function checkApiStatus() {
+        // In a real app, you would ping your API endpoint
+        $("#api-status")
+          .removeClass("text-danger text-warning")
+          .addClass("text-success")
+          .text("Operational");
+      }
     </script>
-</body>
+  </body>
 </html>

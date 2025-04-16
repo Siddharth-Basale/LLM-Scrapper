@@ -10,6 +10,8 @@ from phi.model.google import Gemini
 from dotenv import load_dotenv
 import traceback
 import re
+from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
 
 # Configure logging
 logging.basicConfig(
@@ -32,11 +34,27 @@ if not GOOGLE_API_KEY:
 app = Flask(__name__)
 app.secret_key = secrets.token_hex(16)  # For session management
 
+# Database configuration
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
+
+# User model
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    password_hash = db.Column(db.String(120), nullable=False)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+    def __repr__(self):
+        return f'<User {self.username}>'
+
+# Create database tables
+with app.app_context():
+    db.create_all()
+
 # Constants
 MAX_CONTENT_LENGTH = 10 * 1024 * 1024  # 10MB
-
-# Mock user database (in a real app, use a proper database)
-users = {}
 
 def scrape_website(url, debug_id="DEBUG"):
     """Scrape website content using Crawl4aiTools"""
@@ -85,7 +103,8 @@ def login():
         username = request.form.get("username")
         password = request.form.get("password")
         
-        if username in users and check_password_hash(users[username], password):
+        user = User.query.filter_by(username=username).first()
+        if user and check_password_hash(user.password_hash, password):
             session["user"] = username
             flash("Logged in successfully!", "success")
             return redirect(url_for("index"))
@@ -98,10 +117,17 @@ def signup():
         username = request.form.get("username")
         password = request.form.get("password")
         
-        if username in users:
+        existing_user = User.query.filter_by(username=username).first()
+        if existing_user:
             flash("Username already exists", "danger")
         else:
-            users[username] = generate_password_hash(password)
+            new_user = User(
+                username=username,
+                password_hash=generate_password_hash(password)
+            )
+            db.session.add(new_user)
+            db.session.commit()
+            
             flash("Account created successfully! Please login.", "success")
             return redirect(url_for("login"))
     return render_template("signup.html")
@@ -197,7 +223,36 @@ def analyze_content():
             "error": f"Analysis failed: {str(e)}",
             "status": "error"
         }), 500
+    
+@app.route("/admin/db-viewer", methods=['GET', 'POST'])
+def db_viewer():
+    # Check if user is logged in first
+    if "user" not in session:
+        flash("Please login to access this page", "danger")
+        return redirect(url_for("login"))
+
+    # Handle admin authentication form submission
+    if request.method == 'POST':
+        username = request.form.get('admin_username')
+        password = request.form.get('admin_password')
+        
+        if username == 'admin' and password == '12345678':
+            session['admin_authenticated'] = True
+            users = User.query.all()
+            return render_template("db_viewer.html", users=users)
+        else:
+            flash("Invalid admin credentials", "danger")
+    
+    # Check if already authenticated
+    if session.get('admin_authenticated'):
+        users = User.query.all()
+        return render_template("db_viewer.html", users=users)
+    
+    # Show admin login form
+    return render_template("admin_login.html")
+
 
 if __name__ == "__main__":
     logger.info("Starting Flask application")
     app.run(debug=True, host='0.0.0.0', port=5000)
+
